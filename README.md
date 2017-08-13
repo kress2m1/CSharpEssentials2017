@@ -7,3 +7,5 @@ Continuous Integration added on 12-08-2017
 Ayo updated README file on13-08-2017
 
 Kay updated README file 13-08-2017
+
+Rachael updated README file 13/08/2017
