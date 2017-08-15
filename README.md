@@ -10,6 +10,8 @@ Kay updated README file 13-08-2017
 
 Rachael updated README file 13/08/2017
 
+C# coding basics in Vis.IDE client
+
 Anita updated README file 13/08/2017
 
 Presideji update README file 13/08/2017
