@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_Coding_Basics
+namespace KayBabs_Codes
 {
     class Program
     {
@@ -58,3 +58,4 @@ namespace C_Coding_Basics
         }
     }
 }
+        
