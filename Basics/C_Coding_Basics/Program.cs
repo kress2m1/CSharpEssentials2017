@@ -69,6 +69,7 @@ namespace C_Coding_Basics
                 Console.WriteLine("Welcome Ayo");
             }
             else
+         
             {
                 Console.WriteLine("Sound the alarm");
             }
@@ -89,8 +90,6 @@ namespace C_Coding_Basics
                     Console.WriteLine("The food item entered is not sold here");
                     break;  
             }
-
-
 
 
             Console.ReadKey();

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KayBabs_Codes
+namespace DeenAuto_2017
 {
     class Program
     {
@@ -53,46 +53,9 @@ namespace KayBabs_Codes
                 Console.WriteLine("numOne is < numTwo");
             }
 
-            Console.WriteLine("Please enter a name:");
-            string userInput = Console.ReadLine();
-
-            if (userInput.Equals("Kay"))
-            {
-                Console.WriteLine("Hello Kay");
-            }
-            else if (userInput.Equals("Titi"))
-            {
-                Console.WriteLine("Welcome Titi");
-            }
-            else if (userInput.Equals("Ayo"))
-            {
-                Console.WriteLine("Welcome Ayo");
-            }
-            else
-            {
-                Console.WriteLine("Sound the alarm");
-            }
-
-            //SWITCH STATEMENT
-            Console.WriteLine("Please enter a food item");
-            string foodItem = Console.ReadLine();
-
-            switch (foodItem)
-            {
-                case "Beans":
-                    Console.WriteLine("We have beans");
-                    break;
-                case "Bread":
-                    Console.WriteLine("We have bread");
-                    break;
-                default:
-                    Console.WriteLine("The food item entered is not sold here");
-                    break;
-            }
-
 
             Console.ReadKey();
+
         }
     }
 }
-        

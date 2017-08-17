@@ -23,5 +23,3 @@ Deen updated README file 14/08/17
 
 Titi updated README file on 15/08/2017
 
-Csharp solution 1 updated
-
