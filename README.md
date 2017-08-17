@@ -12,6 +12,8 @@ Rachael updated README file 13/08/2017
 
 C# coding basics in Vis.IDE client
 
+Csharp solution 1 updated
+
 Anita updated README file 13/08/2017
 
 Presideji update README file 13/08/2017
