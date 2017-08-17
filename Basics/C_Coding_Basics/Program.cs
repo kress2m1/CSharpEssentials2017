@@ -69,6 +69,7 @@ namespace C_Coding_Basics
                 Console.WriteLine("Welcome Ayo");
             }
             else
+         
             {
                 Console.WriteLine("Sound the alarm");
             }
