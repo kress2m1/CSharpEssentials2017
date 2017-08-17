@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -49,7 +50,14 @@ namespace AutoProject1
             Console.WriteLine("30 % 10:" + newResult);
 
 
+            Console.WriteLine();
+
+            Boolean maxNum = true;
+            Console.WriteLine(maxNum);
+
             Console.ReadKey();
+
+
 
         }
     }
