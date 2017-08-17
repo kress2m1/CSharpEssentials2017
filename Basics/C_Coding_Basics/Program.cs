@@ -92,8 +92,6 @@ namespace C_Coding_Basics
             }
 
 
-
-
             Console.ReadKey();
         }
     }
