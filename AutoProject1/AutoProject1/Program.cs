@@ -9,7 +9,7 @@ namespace AutoProject1
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
 
             Console.WriteLine("Hello");
@@ -35,7 +35,7 @@ namespace AutoProject1
 
             Console.WriteLine();
             result = numOne*numTwo;
-            Console.WriteLine( result);
+            Console.WriteLine(result);
 
             Console.WriteLine();
             result = numTwo - numOne;
@@ -43,7 +43,7 @@ namespace AutoProject1
 
             Console.WriteLine();
             Double newResult = numTwo/numOne;
-            Console.WriteLine( newResult);
+            Console.WriteLine(newResult);
 
             Console.WriteLine();
             newResult = numTwo%numOne;
@@ -69,6 +69,40 @@ namespace AutoProject1
             Console.WriteLine(result);
 
             Console.WriteLine();
+
+
+
+            // if Statement
+
+            //    if (numOne < numTwo) ;
+            //    {
+
+            //    }
+
+
+            //        Console.WriteLine("numTwo < numOne");
+
+            //else
+            //    {
+            //        Console.WriteLine("numOne is > numTwo");
+            // }
+
+        Console .WriteLine("please enter a number:");
+            string userInput = Console.ReadLine();
+
+            if (userInput.Equals("Kay") || userInput.Equals("Tinu"))
+            // if (userInput.Equals("Kay") && userInput.Equals("Bond"))
+            {
+                Console.WriteLine("Hello Kay");
+            }
+            else
+            {
+                Console.WriteLine("sound the alarm");
+
+            }
+            
+                
+            
 
 
             Console.ReadKey();
