@@ -55,6 +55,22 @@ namespace AutoProject1
             Boolean maxNum = true;
             Console.WriteLine(maxNum);
 
+
+            Console.WriteLine();
+            result = numTwo + numOne + numTwo + numOne;
+            Console.WriteLine(result);
+
+            Console.WriteLine();
+            result = numOne - numTwo - numOne - numTwo;
+            Console.WriteLine(result);
+
+            Console.WriteLine();
+            result = numTwo*numOne*numTwo*numOne;
+            Console.WriteLine(result);
+
+            Console.WriteLine();
+
+
             Console.ReadKey();
 
 
