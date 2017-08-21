@@ -72,46 +72,46 @@ namespace AutoProject1
 
 
 
-            // if Statement
+           // if Statement
 
-            //    if (numOne < numTwo) ;
-            //    {
+        //        if (numOne < numTwo) ;
 
-            //    }
+        //       {
+        //           Console.WriteLine("numTwo < numOne");
+        //       }
 
-
-            //        Console.WriteLine("numTwo < numOne");
-
-            //else
-            //    {
-            //        Console.WriteLine("numOne is > numTwo");
-            // }
-
-        Console .WriteLine("please enter a number:");
+        //else if
+            
+                
+            { 
+                Console.WriteLine("numOne is > numTwo");
+            }   
+               
+            Console.WriteLine("please enter a number:");
             string userInput = Console.ReadLine();
+            string anotherInput = Console.ReadLine();
 
             if (userInput.Equals("Kay") || userInput.Equals("Tinu"))
-            // if (userInput.Equals("Kay") && userInput.Equals("Tinu"))
-            {
+
+                 if (userInput.Equals("Kay") && anotherInput.Equals("Tinu"))
+               {
                 Console.WriteLine("Hello Kay");
-            }
-            else
-            {
-                Console.WriteLine("sound the alarm");
-
-            }
-
-            {
-            else if (userInput.Equals("Tola"));
-            }
-
-            {
-               Console.WriteLine(" Welcome Tola");
-            }
-            {
-                else
-                if (userInput.Equals("Tope")) ;
-            }
+               }
+            //else if
+            // {
+            //        Console.WriteLine("sound the alarm");
+            // }
+          
+            //else
+            //if (userInput.Equals("Tola")) ;
+            
+            //{
+            //   Console.WriteLine(" Welcome Tola");
+            //}
+             
+            // else if (userInput.Equals("Tope")) ;
+           
+            
             {
                 Console.WriteLine("Welcome Tope");
             }
@@ -119,18 +119,29 @@ namespace AutoProject1
             Console.WriteLine("Please enter food item");
             string foodItem = Console.ReadLine();
             switch (foodItem)
-            
-                case "Beans":
-         
-            Console.WriteLine("we have beans");
-             break;
-            case "Bread":
-                Console.WriteLine("we have bread");
-            break;
-            default:
-                Console.WriteLine("the food item is not sold here");
-            break;
+            {
+                case "Beans": 
 
+                Console.WriteLine("we have beans");
+                    break;
+            }
+            
+              switch (foodItem)
+            {
+                case "Bread":
+                
+                Console.WriteLine("we have bread");
+                        
+                break;
+                        }
+            switch (foodItem)
+            {
+                case "EBA": 
+
+                default:
+                    Console.WriteLine("the food item is not sold here");
+                    break;
+            }
 
             Console.ReadKey();
 
