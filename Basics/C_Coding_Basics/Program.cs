@@ -171,10 +171,6 @@ namespace C_Coding_Basics
             hushPuppy.drink();
             hushPuppy.eat();
 
-
-            
-           
-
             Console.ReadKey();
         }
     }
