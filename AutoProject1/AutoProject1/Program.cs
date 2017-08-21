@@ -91,7 +91,7 @@ namespace AutoProject1
             string userInput = Console.ReadLine();
 
             if (userInput.Equals("Kay") || userInput.Equals("Tinu"))
-            // if (userInput.Equals("Kay") && userInput.Equals("Bond"))
+            // if (userInput.Equals("Kay") && userInput.Equals("Tinu"))
             {
                 Console.WriteLine("Hello Kay");
             }
@@ -100,9 +100,36 @@ namespace AutoProject1
                 Console.WriteLine("sound the alarm");
 
             }
+
+            {
+            else if (userInput.Equals("Tola"));
+            }
+
+            {
+               Console.WriteLine(" Welcome Tola");
+            }
+            {
+                else
+                if (userInput.Equals("Tope")) ;
+            }
+            {
+                Console.WriteLine("Welcome Tope");
+            }
+            //switch statatement
+            Console.WriteLine("Please enter food item");
+            string foodItem = Console.ReadLine();
+            switch (foodItem)
             
-                
-            
+                case "Beans":
+         
+            Console.WriteLine("we have beans");
+             break;
+            case "Bread":
+                Console.WriteLine("we have bread");
+            break;
+            default:
+                Console.WriteLine("the food item is not sold here");
+            break;
 
 
             Console.ReadKey();
