@@ -9,7 +9,7 @@ namespace AutoProject1
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
 
             Console.WriteLine("Hello");
@@ -35,7 +35,7 @@ namespace AutoProject1
 
             Console.WriteLine();
             result = numOne*numTwo;
-            Console.WriteLine( result);
+            Console.WriteLine(result);
 
             Console.WriteLine();
             result = numTwo - numOne;
@@ -43,7 +43,7 @@ namespace AutoProject1
 
             Console.WriteLine();
             Double newResult = numTwo/numOne;
-            Console.WriteLine( newResult);
+            Console.WriteLine(newResult);
 
             Console.WriteLine();
             newResult = numTwo%numOne;
@@ -54,6 +54,94 @@ namespace AutoProject1
 
             Boolean maxNum = true;
             Console.WriteLine(maxNum);
+
+
+            Console.WriteLine();
+            result = numTwo + numOne + numTwo + numOne;
+            Console.WriteLine(result);
+
+            Console.WriteLine();
+            result = numOne - numTwo - numOne - numTwo;
+            Console.WriteLine(result);
+
+            Console.WriteLine();
+            result = numTwo*numOne*numTwo*numOne;
+            Console.WriteLine(result);
+
+            Console.WriteLine();
+
+
+
+           // if Statement
+
+        //        if (numOne < numTwo) ;
+
+        //       {
+        //           Console.WriteLine("numTwo < numOne");
+        //       }
+
+        //else if
+            
+                
+            { 
+                Console.WriteLine("numOne is > numTwo");
+            }   
+               
+            Console.WriteLine("please enter a number:");
+            string userInput = Console.ReadLine();
+            string anotherInput = Console.ReadLine();
+
+            if (userInput.Equals("Kay") || userInput.Equals("Tinu"))
+
+                 if (userInput.Equals("Kay") && anotherInput.Equals("Tinu"))
+               {
+                Console.WriteLine("Hello Kay");
+               }
+            //else if
+            // {
+            //        Console.WriteLine("sound the alarm");
+            // }
+          
+            //else
+            //if (userInput.Equals("Tola")) ;
+            
+            //{
+            //   Console.WriteLine(" Welcome Tola");
+            //}
+             
+            // else if (userInput.Equals("Tope")) ;
+           
+            
+            {
+                Console.WriteLine("Welcome Tope");
+            }
+            //switch statatement
+            Console.WriteLine("Please enter food item");
+            string foodItem = Console.ReadLine();
+            switch (foodItem)
+            {
+                case "Beans": 
+
+                Console.WriteLine("we have beans");
+                    break;
+            }
+            
+              switch (foodItem)
+            {
+                case "Bread":
+                
+                Console.WriteLine("we have bread");
+                        
+                break;
+                        }
+            switch (foodItem)
+            {
+                case "EBA": 
+
+                default:
+                    Console.WriteLine("the food item is not sold here");
+                    break;
+            }
 
             Console.ReadKey();
 
