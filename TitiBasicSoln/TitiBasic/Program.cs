@@ -144,7 +144,7 @@ namespace TitiBasic
 
             // for LOOP
             //double counter;
-            for (int counter = 0; counter < 12; counter+=4)
+            for (int counter = 0; counter < 10; counter+=4)
             {
                 Console.WriteLine("My nunber is " + counter);           
                     }
