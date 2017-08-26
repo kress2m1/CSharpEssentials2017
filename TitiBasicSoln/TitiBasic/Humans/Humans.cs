@@ -13,6 +13,7 @@ namespace TitiBasic
         int numberHead = 1;
         int numberMouth = 1;
         int numberhand = 2;
+        int numberLegs = 2;
 
         //Method
 
@@ -35,6 +36,10 @@ namespace TitiBasic
         public void Eat()
         {
             Console.WriteLine("I can Eat");
+        }
+        public void Run()
+        {
+         Console.WriteLine("I can Run");
         }
 
 

@@ -172,6 +172,7 @@ namespace TitiBasic
             Linda.Eat();
             Linda.Think();
             Linda.wash();
+            Linda.Run();
 
 
             Console.ReadKey();
