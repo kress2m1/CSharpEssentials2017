@@ -3,37 +3,38 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Family;
 
 namespace C_Coding_Basics
 {
-    class Dog
+    public class Dog 
     {
         //variables of object dog
-        int eyes = 2;
-        int legs = 4;
-        int ears = 2;
-        int tail = 1;
-        int mouth = 1;
+        public int Eyes = 2;
+        private int Legs = 4;
+        private int Ears = 2;
+        private int Tail = 1;
+        private int Mouth = 1;
 
         //methods of object Dog
 
         //Our dog can eat
-        public void eat()
+        public void Eat()
         {
             Console.WriteLine("I can eat");
         }
 
-        public void bark()
+        public void Bark()
         {
             Console.WriteLine("I can bark");
         }
 
-        public void run()
+        public void Run()
         {
             Console.WriteLine("I can run");   
         }
 
-        public void drink()
+        public void Drink()
         {
             Console.WriteLine("I can drink");   
         }
