@@ -20,7 +20,7 @@ namespace TitiBasic
             //            Console.WriteLine();
             //            string name = "Titi";
 
-            //            Console.WriteLine("My name is " + name);
+                     // Console.WriteLine("My name is " + name);
 
             //            string welcome = "Hello Bryan Divas";
             //            Console.WriteLine(welcome);
@@ -144,13 +144,38 @@ namespace TitiBasic
 
             // for LOOP
             //double counter;
-            for (int counter = 0; counter < 10; counter+=4)
-            {
-                Console.WriteLine("My nunber is " + counter);           
-                    }
+            //for (int counter = 0; counter < 12; counter+=4)
+            // {
+            //Console.WriteLine("My nunber is " + counter);           
+            //}
 
-                Console.ReadKey();
+            //  Console.ReadKey();
+            // class--> object =new instance-->constructor
+            //Dog husky = new Dog();
+            //husky.Bark();
+            //Console.WriteLine("This is Husky");
+            //Console.WriteLine();
+            //Console.WriteLine("This is Husspuppy");
 
+            //Dog husspuppy = new Dog();
+            //husspuppy.Bark();
+            //husspuppy.Drink();
+            //husspuppy.Drink();
+
+            // This Human
+          Humans Vera = new Humans ();
+            Vera.See();
+            Console.WriteLine();
+            Console.WriteLine();
+            //This Method of Linda
+            Humans Linda = new Humans();
+            Linda.Eat();
+            Linda.Think();
+            Linda.wash();
+
+
+            Console.ReadKey();
+            
         }
     }
 }
