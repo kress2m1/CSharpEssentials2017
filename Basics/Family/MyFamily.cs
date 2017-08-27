@@ -30,7 +30,5 @@ namespace Family
             Console.WriteLine("my name is" + Name);
             Console.WriteLine(Money * 34);
         }
-
-
     }
 }
