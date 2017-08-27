@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Family.OverloadedMethods;
 using Family.Teen;
 
 namespace Family
@@ -13,15 +14,24 @@ namespace Family
         {
             Console.WriteLine("This is the main method from the Program Family");
 
-            Teenager teenager = new Teenager();
+            //Teenager teenager = new Teenager();
 
-            teenager.GetDetailsFromBaby();
-            Console.WriteLine("Baby's previous address was {0}", teenager.Address);
-            teenager.GetMoreDetailsFromBaby();
+            //teenager.GetDetailsFromBaby();
+            //Console.WriteLine("Baby's previous address was {0}", teenager.Address);
+            //teenager.GetMoreDetailsFromBaby();
 
-            teenager.GetSiblingFriendDetails();
-            teenager.GiveBabyANewFriend();
+            //teenager.GetSiblingFriendDetails();
+            //teenager.GiveBabyANewFriend();
 
+            MethodAndOverloading methodAndOverloading = new MethodAndOverloading();
+            methodAndOverloading.AdditionMethod();
+            Console.WriteLine("---------------");
+            methodAndOverloading.AdditionMethod(44, 55);
+            methodAndOverloading.AdditionMethod(100, 23);
+            methodAndOverloading.AdditionMethod(25, 78);
+            methodAndOverloading.AdditionMethod(44, 28);
+            Console.WriteLine("---------------");
+            methodAndOverloading.AdditionMethod(14, 21, 10);
             Console.ReadKey();
         }
     }
