@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{952C514C-5CE2-4E69-988A-66DC01E566B7}</ProjectGuid>
+    <ProjectGuid>{E38AA1A4-0166-44BA-BC22-133A0E14DE5D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AutoProject1</RootNamespace>
-    <AssemblyName>AutoProject1</AssemblyName>
+    <RootNamespace>ExtenededFamily</RootNamespace>
+    <AssemblyName>ExtenededFamily</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,24 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animal\Cat.cs" />
-    <Compile Include="Human\Human.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Cousins\CousinsClass.cs" />
+    <Compile Include="GrandParents\GrandParentsClass.cs" />
+    <Compile Include="Nieces\NiecesClass.cs" />
+    <Compile Include="ProgramExtendedFamily.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ExtenededFamily\ExtenededFamily.csproj">
-      <Project>{e38aa1a4-0166-44ba-bc22-133a0e14de5d}</Project>
-      <Name>ExtenededFamily</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Family\Family.csproj">
-      <Project>{f9adc897-362b-4eb3-aaef-28ed3754f779}</Project>
-      <Name>Family</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
