@@ -32,6 +32,18 @@ namespace Family
             methodAndOverloading.AdditionMethod(44, 28);
             Console.WriteLine("---------------");
             methodAndOverloading.AdditionMethod(14, 21, 10);
+
+            Console.WriteLine("---------------");
+            Birds birds = new Birds();
+            Console.WriteLine(birds.GetNameOfBird());
+            Console.WriteLine(birds.GetNumOfEyes());
+           
+            birds.SetNameOfBird("Eagle");
+            birds.SetNumOfEyes(4);
+
+            Console.WriteLine(birds.GetNameOfBird());
+            Console.WriteLine(birds.GetNumOfEyes());
+
             Console.ReadKey();
         }
     }
