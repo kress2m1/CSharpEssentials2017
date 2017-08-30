@@ -6,6 +6,8 @@ using System.Runtime.Remoting.Services;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
+using ExtenededFamily.Cousins;
+using NuclearFamily.Teen;
 
 namespace AutoProject1
 {
@@ -207,17 +209,21 @@ namespace AutoProject1
             hushpuppy .mew();
             hushpuppy.drink();
             hushpuppy.eat();
-       
+
             Console.WriteLine();
-            Console.WriteLine("I am Bobby");
+
             Human Bobby = new Human();
             Bobby.talk();
             Bobby.walk();
             Bobby.see();
             Bobby.eat();
 
+            Youngsters youngsters = new Youngsters();
+            youngsters.MyName();
 
+            CousinsClass cousinsClass = new CousinsClass();
 
+           
             Console.ReadKey();
             
 
