@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using C_Coding_Basics.ArraysClass;
 using C_Coding_Basics.Humans;
 using ExtendedFamily.Cousins;
 using ExtendedFamily.GrandParents;
@@ -32,14 +33,18 @@ namespace C_Coding_Basics
             //Human humansTeen = new Human();
             //humansTeen.PullDetailsFromTeenager();
 
-            NiecesClass niece = new NiecesClass();
-            niece.DisplayNieceName();
+            //NiecesClass niece = new NiecesClass();
+            //niece.DisplayNieceName();
 
-            CousinsClass cousinsClass = new CousinsClass();
-            cousinsClass.DisplayNieceName();
-            cousinsClass.CallNieceFriendsName();
-            cousinsClass.CallDetailsForNiece();
+            //CousinsClass cousinsClass = new CousinsClass();
+            //cousinsClass.DisplayNieceName();
+            //cousinsClass.CallNieceFriendsName();
+            //cousinsClass.CallDetailsForNiece();
 
+            DiscussingArrays discussingArrays = new DiscussingArrays();
+            discussingArrays.AgeOfStudents();
+            discussingArrays.TeacherName();
+            discussingArrays.CourseNames();
 
             Console.ReadKey();
         }

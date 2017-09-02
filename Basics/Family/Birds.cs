@@ -13,6 +13,9 @@ namespace Family
         private string _nameOfBird = "Swallow";
         private int NumOfLegs = 2;
 
+        private int Legs = 3;
+        public string Nose { get; set; } = "Test";
+
         //This is the getter for NumOfEyes
         public int GetNumOfEyes()
         {
@@ -36,6 +39,5 @@ namespace Family
         {
             this._nameOfBird = setNameOfBird;
         }
-
     }
 }
