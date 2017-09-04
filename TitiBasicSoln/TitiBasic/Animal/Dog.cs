@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TitiBasic
 {
-    class Dog
+   public class Dog 
     {
         // variables of the objects Dog i.e properties
         int numberEyes = 2;
