@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using C_Coding_Basics.ArraysClass;
 using C_Coding_Basics.Humans;
+using C_Coding_Basics.ListClass;
 using ExtendedFamily.Cousins;
 using ExtendedFamily.GrandParents;
 using ExtendedFamily.Nieces;
@@ -17,7 +18,7 @@ namespace C_Coding_Basics
     {
         static void Main(string[] args)
         {
-            
+
             // Class --> Object = New Instance --> Constructor
             //Dog husky = new Dog();
             //Console.WriteLine("This is a Husky");
@@ -41,10 +42,18 @@ namespace C_Coding_Basics
             //cousinsClass.CallNieceFriendsName();
             //cousinsClass.CallDetailsForNiece();
 
-            DiscussingArrays discussingArrays = new DiscussingArrays();
-            discussingArrays.AgeOfStudents();
-            discussingArrays.TeacherName();
-            discussingArrays.CourseNames();
+            //DiscussingArrays discussingArrays = new DiscussingArrays();
+            //discussingArrays.AgeOfStudents();
+            //discussingArrays.TeacherName();
+            //discussingArrays.CourseNames();
+
+            Console.WriteLine("Please enter a password");
+            string userPassword = Console.ReadLine();
+
+            DiscussingLists discussingLists = new DiscussingLists();
+            discussingLists.CallUserDetails(userPassword);
+            discussingLists.ListItems();
+            
 
             Console.ReadKey();
         }
