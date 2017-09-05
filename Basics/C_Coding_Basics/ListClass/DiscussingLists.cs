@@ -43,6 +43,7 @@ namespace C_Coding_Basics.ListClass
             MensWear.Add("belt");
             MensWear.Add("Tie");
             MensWear.Add("CUFFLINKS");
+            MensWear.Add("Bata");
         }
     }
 }
