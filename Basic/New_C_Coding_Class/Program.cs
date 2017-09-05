@@ -66,6 +66,75 @@ namespace New_C_Coding_Class
 
             //Console.ReadKey();
 
+            Console.WriteLine("Please enter a name:");
+
+           string userInput = Console.ReadLine();
+           // int userInput = Convert.ToInt32(Console.ReadLine()); // anything accept is a string then it now converts it "Int32"
+
+            //if (userInput.Equals("Dipo")) // -	If entering a string, we use variable .Equals
+            //If entering a number, we use variable =
+
+            // if (userinput.Equals("Dipo") || userinput.Equals("Bond"))
+
+            // string anotherInput = Console.ReadLine();
+
+            //if (userInput.Equals("Dipo") && anotherInput.Equals("Bond"))
+
+            if (userInput.Equals("Dipo"))
+
+            {
+
+                Console.WriteLine("Hello Dipo");
+
+            }
+        
+
+            else if (userInput.Equals("Titi"))
+
+            {
+                
+                Console.WriteLine("Welcome Titi");
+
+            }
+
+            else if (userInput.Equals("Ayo"))
+
+            {
+                Console.WriteLine("Ayo");
+
+            }
+
+        else
+            
+            {
+                Console.Write("Sound the alarm");
+                
+            }
+
+            //anothere way of using ifelse statement is 
+            //SWITCH STATEMENT
+
+            Console.WriteLine("Please enter a food item");
+            string foodItem = Console.ReadLine();
+
+            switch (foodItem)
+            {
+                case "Beans":
+                    Console.WriteLine("we have beans");
+                    break;
+
+                case "Bread":
+                    Console.WriteLine("we have bread");
+                    break;
+                default:
+                    Console.WriteLine("The food item entered is not sold here");
+                    break;
+                    
+            }
+
+            Console.ReadKey();
+
+
 
             Console.WriteLine(); //this creates an empty space
 
