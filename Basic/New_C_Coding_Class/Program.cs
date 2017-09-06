@@ -68,7 +68,8 @@ namespace New_C_Coding_Class
 
             Console.WriteLine("Please enter a name:");
 
-           string userInput = Console.ReadLine();
+         //  string userInput = Console.ReadLine();
+
            // int userInput = Convert.ToInt32(Console.ReadLine()); // anything accept is a string then it now converts it "Int32"
 
             //if (userInput.Equals("Dipo")) // -	If entering a string, we use variable .Equals
@@ -80,36 +81,36 @@ namespace New_C_Coding_Class
 
             //if (userInput.Equals("Dipo") && anotherInput.Equals("Bond"))
 
-            if (userInput.Equals("Dipo"))
+        //    if (userInput.Equals("Dipo"))
 
-            {
+         //   {
 
-                Console.WriteLine("Hello Dipo");
+          //      Console.WriteLine("Hello Dipo");
 
-            }
+          //  }
         
 
-            else if (userInput.Equals("Titi"))
+         //   else if (userInput.Equals("Titi"))
 
-            {
+        //    {
                 
-                Console.WriteLine("Welcome Titi");
+        //        Console.WriteLine("Welcome Titi");
 
-            }
+         //   }
 
-            else if (userInput.Equals("Ayo"))
+        //    else if (userInput.Equals("Ayo"))
 
-            {
+        //    {
                 Console.WriteLine("Ayo");
 
-            }
+         //   }
 
-        else
+    //    else
             
-            {
-                Console.Write("Sound the alarm");
+     //       {
+     //           Console.Write("Sound the alarm");
                 
-            }
+      //      }
 
             //anothere way of using ifelse statement is 
             //SWITCH STATEMENT
@@ -131,6 +132,89 @@ namespace New_C_Coding_Class
                     break;
                     
             }
+
+            //assignment
+
+            Console.WriteLine("Please, enter a name:");
+            string userInput = Console.ReadLine();
+
+            if (userInput.Equals("Andre"))
+
+            {
+                Console.WriteLine("FAILED COURSE");
+
+            }
+
+            else if (userInput.Equals("Bob"))
+
+            {
+                Console.WriteLine("PASSED COURSE");
+            }
+                
+            else if (userInput.Equals("Gana"))
+            {
+                Console.WriteLine("OBTAINED A DIPLOMA");
+            }
+
+            else if (userInput.Equals("Ayo"))
+            {
+                Console.WriteLine("OBTAINED A SECOND CLASS LOWER");
+            }
+
+            else if (userInput.Equals("Bayo"))
+            {
+                Console.WriteLine("OBTAINED A SECOND CLASS UPPER");
+            }
+
+            else if (userInput.Equals("Tolu"))
+
+            {
+                Console.WriteLine("OBTAINED A FIRST CLASS");
+            }
+
+            else
+            {
+                Console.WriteLine("GRADE DOES NOT EXIST");
+            }
+
+            //ASSIGNMENT USING - SWITCH STATEMENT
+
+            Console.WriteLine("Please enter the candidate name:");
+            string candidateName = Console.ReadLine();
+
+            switch (candidateName)
+            {
+                case "Bola":
+                    Console.WriteLine("FAILED THE COURSE");
+                    break;
+
+                case "winnie":
+                    Console.WriteLine("PASSED COURSE");
+                    break;
+
+                case "Gail":
+                    Console.WriteLine("OBTAINED A DIPLOMA");
+                    break;
+
+                case "Yet":
+                    Console.WriteLine("OBTAINED SECOND CLASS LOWER");
+                    break;
+
+                case "Nike":
+                    Console.WriteLine("OBTAINED SECOND CLASS UPPER");
+                    break;
+
+                case "Rose":
+                    Console.WriteLine("OBTAINED A FIRTS CLASS");
+                    break;
+
+                case "Shila":
+                    Console.WriteLine("GRADE DOES NOT EXIST");
+                    break;
+
+            }
+
+
 
             Console.ReadKey();
 
