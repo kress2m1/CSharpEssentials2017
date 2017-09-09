@@ -88,8 +88,14 @@ namespace KayBabs_Codes
                     Console.WriteLine("The food item entered is not sold here");
                     break;
             }
-
-
+            if (b)
+            {
+                
+            }
+            else
+            {
+                
+            }
             Console.ReadKey();
         }
     }
