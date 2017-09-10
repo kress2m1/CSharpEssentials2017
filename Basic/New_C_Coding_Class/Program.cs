@@ -228,7 +228,112 @@ namespace New_C_Coding_Class
             string name = "Anita";
             Console.WriteLine("My name is " + name);
 
-            Console.ReadKey(); //read any key that user press
+
+            //CONVERTING "STRING" into "INT"
+            Console.WriteLine("Please enter a number:");
+            string number = Console.ReadLine();
+            // int numberConverted = int.Parse(number); // this convert from string to integer
+
+            //to convert to double data type
+            // double numberConverted = double.Parse(number);
+
+            //to convert to float
+            // float numberConverted = float.Parse(number);
+
+
+
+            // Console.WriteLine(numberConverted + 100);
+            //  Console.WriteLine(numberConverted / 100);
+            //Console.WriteLine(number + 100);
+            //  Console.WriteLine(number / 100); // this is saying u cannot divide a word by number
+
+
+            // CONTROL STATEMENT
+
+            /**
+            int numberToBeChecked = 32;
+
+            * int == datatype
+            * numberToBeChecked == variable name
+            * 32 == the value assigned
+            */
+
+            int numberToBeChecked = 32;
+
+            while (numberToBeChecked < 40)
+            {
+                Console.WriteLine("Hello");
+                numberToBeChecked = numberToBeChecked + 1;
+
+            }
+
+                Console.WriteLine("I am free!");
+            
+            ////DO WHILE LOOP
+           
+            //Console.WriteLine("Please enter the patient name:");
+            //string patientName = Console.ReadLine();
+            //Console.WriteLine("Only give insulin injection to Agnes");
+
+            //do
+            //{
+            //    Console.WriteLine("Please give insulin injection");
+            //} while (patientName.Equals("Agnes"));
+
+            //Console.WriteLine("Do not give injection if patient is Bob");
+            
+
+            //FOR LOOPS
+           // int counter = 0;
+
+            //for (int counter = 0; counter < 12; counter+=4) // it can be int or double or anything u want to call it
+            //{
+            //    Console.WriteLine("My number is" + counter);
+            //}
+
+
+            //ASSIGNMENT - Control Statement
+
+            Console.WriteLine("Please enter your grade :");
+            float grades = float.Parse(Console.ReadLine());
+            {
+                if ((grades >= 0.00) && (grades <= 0.99))
+                {
+                    Console.WriteLine("Failed Course");
+                }
+                else if ((grades >= 1.00) && (grades <= 1.99))
+                {
+                    Console.WriteLine("Passed Course");
+                }
+                else if ((grades >= 2.00) && (grades <= 2.99))
+                {
+                    Console.WriteLine("OBTAINED A DIPLOMA");
+                }
+                else if ((grades >= 3.00) && (grades <= 3.99))
+                {
+                    Console.WriteLine("Obtained Second Class Lower");
+                }
+                else if ((grades >= 4.00) && (grades <= 4.49))
+                {
+                    Console.WriteLine("Obtained Second Class Upper ");
+                }
+                else if ((grades >= 4.50) && (grades <= 5.00))
+                {
+                    Console.WriteLine("Obtained First Class");
+                }
+                else 
+                //if ((grades < 0.00) && (grades > 5.00))
+                {
+                    Console.WriteLine("Grade Does Not Exist");
+                }
+
+                Console.ReadLine();
+
+
+              //  Console.ReadKey(); //read any key that user press
+
+            }
+
         }
     }
 }
