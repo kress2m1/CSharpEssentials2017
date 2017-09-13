@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NewNewclearFamily;
+using NewNewclearFamily;
 
 namespace New_C_Coding_Class
 {
-    class Dog
+   public class Dog : Youngstars
     {
         //variable of object dog. we have data type, variable name and value
+        public 
         int numberOfEyes = 2;
         int numberOfLegs = 4;
         int numberofEars = 2;
@@ -38,7 +41,8 @@ namespace New_C_Coding_Class
             Console.WriteLine("I can drink");
         }
 
-
+        //Youngstars youngstars = new Youngstars();
+       // Youngstars
 
 
     }

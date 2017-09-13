@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NewNewclearFamily;
+using NewNewclearFamily.Parents;
+using NewNewclearFamily;
 
 namespace New_C_Coding_Class
 
@@ -334,6 +337,8 @@ namespace New_C_Coding_Class
             Dog husky = new Dog();
             Console.WriteLine("This is a husky");
             husky.bark();
+         
+
 
             Console.WriteLine();
             Console.WriteLine("This is a Hush Puppy");
@@ -354,6 +359,16 @@ namespace New_C_Coding_Class
             Maleboy.see();
             Maleboy.think();
 
+            Youngstars youngstars = new Youngstars();
+            // Now let us call the variable in Younstars and let us see what will be displayed for us
+         // youngstars.myName(); // we can only see my name because it is public. All others private and protected will not be displayed
+             
+                  
+            DadandMum dadandMum = new DadandMum();
+            
+            Dog dog = new Dog();
+            dog.myAge();
+            
 
 
             Console.ReadLine();
