@@ -11,8 +11,8 @@ namespace C_Coding_Basics.Humans
     {
         public void PullDetailsFromTeenager()
         {
-            var NewTeenAddress = "Yonder";
-            Console.WriteLine("Teenager now lives at {0}", NewTeenAddress);
+            var newTeenAddress = "Yonder";
+            Console.WriteLine("Teenager now lives at {0}", newTeenAddress);
         }
 
         public void GetSomeMoreInfoAboutTeen()

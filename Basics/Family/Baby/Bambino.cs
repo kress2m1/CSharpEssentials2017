@@ -8,15 +8,15 @@ namespace Family.Baby
 {
     public class Bambino
     {
-        private string BabyName = "Azubike";
-        private string LastName = "Edochie";
+        private string _babyName = "Azubike";
+        private string _lastName = "Edochie";
         public string Address = ": Somewhere";
         protected string BabyFriendsName = "Tope";
 
 
         public void DisplayBabyName()
         {
-            Console.WriteLine("The baby's name is {0} & her lastname is {1}", BabyName, LastName);
+            Console.WriteLine("The baby's name is {0} & her lastname is {1}", _babyName, _lastName);
         }
 
         protected void FriendsOfBaby()

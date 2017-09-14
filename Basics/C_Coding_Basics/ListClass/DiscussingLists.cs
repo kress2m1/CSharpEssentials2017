@@ -38,12 +38,34 @@ namespace C_Coding_Basics.ListClass
 
         public void ListItems()
         {
-            List<string> MensWear = new List<string>();
-            MensWear.Add("Shoes");
-            MensWear.Add("belt");
-            MensWear.Add("Tie");
-            MensWear.Add("CUFFLINKS");
-            MensWear.Add("Bata"); //
+            List<string> mensWear = new List<string>();
+            mensWear.Add("Shoes");
+            mensWear.Add("belt");
+            mensWear.Add("Tie");
+            mensWear.Add("CUFFLINKS");
+            mensWear.Add("Bata"); //
+
+            var mensWearCount = mensWear.Count;
+            Console.WriteLine(mensWearCount);
+
+            foreach (var men in mensWear)
+            {
+                if (men.Contains("Shoess"))
+                {
+                    Console.WriteLine("Shoes are availble");
+                    break;
+                }
+                else if (men.Contains("Tieses"))
+                {
+                    Console.WriteLine("Tie is available");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Product not available");
+                    break;
+                }
+            }
         }
     }
 }
