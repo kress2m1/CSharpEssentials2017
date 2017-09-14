@@ -9,8 +9,8 @@ namespace ExtendedFamily.Cousins
 {
     public class CousinsClass : NiecesClass
     {
-        private string CousinName = "Lanre";
-        private string CousinLastName = "Ayo";
+        private string _cousinName = "Lanre";
+        private string _cousinLastName = "Ayo";
         public string CousinAddress = "Online";
         protected string CousinFriendsName = "Kayode";
 

@@ -10,14 +10,14 @@ namespace Family
     public class MyFamily
     {
         public int Age = 23;
-        private string Name = "Andre";
-        private int Money = 23;
+        private string _name = "Andre";
+        private int _money = 23;
         protected string Address = "some where";
 
         public void MyAge()
         {
             Console.WriteLine("I am " + Age + " years old");
-            Console.WriteLine(Money * 100);
+            Console.WriteLine(_money * 100);
         }
 
         protected void MyAddress()
@@ -27,8 +27,8 @@ namespace Family
 
         private void MyName()
         {
-            Console.WriteLine("my name is" + Name);
-            Console.WriteLine(Money * 34);
+            Console.WriteLine("my name is" + _name);
+            Console.WriteLine(_money * 34);
         }
     }
 }

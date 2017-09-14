@@ -45,6 +45,9 @@
   <ItemGroup>
     <Compile Include="Baby\Bambino.cs" />
     <Compile Include="Birds.cs" />
+    <Compile Include="Inherittance\PrimaryClass.cs" />
+    <Compile Include="Inherittance\SecondaryClass.cs" />
+    <Compile Include="Inherittance\TetiaryClass.cs" />
     <Compile Include="MyFamily.cs" />
     <Compile Include="OverloadedMethods\MethodAndOverloading.cs" />
     <Compile Include="Parent\MumAndDad.cs" />

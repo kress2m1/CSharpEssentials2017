@@ -10,11 +10,21 @@ namespace C_Coding_Basics
     public class Dog 
     {
         //variables of object dog
-        public int Eyes = 2;
-        private int Legs = 4;
-        private int Ears = 2;
-        private int Tail = 1;
-        private int Mouth = 1;
+        public int Eyes;
+        private int _legs;
+        private int _ears;
+        private int _tail;
+        private int _mouth;
+
+        //this is a constructor of the class
+        public Dog(int eyes, int legs, int ears, int tail, int mouth)
+        {
+            Eyes = eyes;
+            _legs = legs;
+            _ears = ears;
+            _tail = tail;
+            _mouth = mouth;
+        }
 
         //methods of object Dog
 
@@ -22,6 +32,7 @@ namespace C_Coding_Basics
         public void Eat()
         {
             Console.WriteLine("I can eat");
+            Console.WriteLine("The do has " + Eyes + " and " + _legs + " legs");
         }
 
         public void Bark()

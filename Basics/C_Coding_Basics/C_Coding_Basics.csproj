@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Animal\Dog.cs" />
     <Compile Include="ArraysClass\DiscussingArrays.cs" />
+    <Compile Include="DragonConstruction\DragonLord.cs" />
     <Compile Include="Humans\Human.cs" />
     <Compile Include="ListClass\DiscussingLists.cs" />
     <Compile Include="ProgramMain.cs" />

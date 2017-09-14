@@ -11,9 +11,9 @@ namespace Family
     {
         private int _numOfeyes = 2;
         private string _nameOfBird = "Swallow";
-        private int NumOfLegs = 2;
+        private int _numOfLegs = 2;
 
-        private int Legs = 3;
+        private int _legs = 3;
         public string Nose { get; set; } = "Test";
 
         //This is the getter for NumOfEyes
