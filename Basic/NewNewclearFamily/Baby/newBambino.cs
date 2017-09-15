@@ -6,11 +6,26 @@ using System.Threading.Tasks;
 
 namespace NewNewclearFamily.Baby
 {
-    class newBambino
+   public class newBambino
     {
-        public int age = 14;
-        public string name = "Jane";
-        private string address = "Some where";
+        public int Age = 14;
+        public string Name = "Jane";
+        public string Address = "Some where";
+        private string BabyName = "Azubike";
+        private string LastName = "Edochie";
+        protected string BabyFriendsName = "Tope";
+
+        public void DsiplayBabyName()
+        {
+            Console.WriteLine("The baby's name is {0} & her lastname is {1}", BabyName, LastName);
+          
+        }
+
+       protected void FriendsOfBabay()
+       {
+           Console.WriteLine("The baby's best friend is named {0}" , BabyFriendsName);
+
+       }
 
     }
 }

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E172295A-897A-487A-AB32-E9A1E2694146}</ProjectGuid>
+    <ProjectGuid>{48520AB1-EC28-44F4-A17B-C90D84210E1D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>New_C_Coding_Class</RootNamespace>
-    <AssemblyName>New_C_Coding_Class</AssemblyName>
+    <RootNamespace>ExtendedFamily</RootNamespace>
+    <AssemblyName>ExtendedFamily</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,24 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animal\Dog.cs" />
-    <Compile Include="Humans\Humans.cs" />
-    <Compile Include="ProgramMain.cs" />
+    <Compile Include="Cousins\CousinsClass.cs" />
+    <Compile Include="GrandParents\GrandParentsClass.cs" />
+    <Compile Include="Nieces\NiecesClass.cs" />
+    <Compile Include="ProgramExtendedFamily.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ExtendedFamily\ExtendedFamily.csproj">
-      <Project>{48520ab1-ec28-44f4-a17b-c90d84210e1d}</Project>
-      <Name>ExtendedFamily</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NewNewclearFamily\NewNewclearFamily.csproj">
-      <Project>{e6417428-8c2d-4bf6-9612-a97b8ce7bb04}</Project>
-      <Name>NewNewclearFamily</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
