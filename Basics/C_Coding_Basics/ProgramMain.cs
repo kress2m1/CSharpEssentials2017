@@ -8,6 +8,7 @@ using C_Coding_Basics.ArraysClass;
 using C_Coding_Basics.DragonConstruction;
 using C_Coding_Basics.Humans;
 using C_Coding_Basics.ListClass;
+using C_Coding_Basics.Polymorph;
 using ExtendedFamily.Cousins;
 using ExtendedFamily.GrandParents;
 using ExtendedFamily.Nieces;
@@ -56,15 +57,24 @@ namespace C_Coding_Basics
             //discussingLists.CallUserDetails(userPassword);
             //discussingLists.ListItems();
 
-            DragonLord dragon = new DragonLord(4, 3, "breathes fire");
-            dragon.BlackDragon();
+            //DragonLord dragon = new DragonLord(4, 3, "breathes fire");
+            //dragon.BlackDragon();
             
-            DragonLord droDragonLord = new DragonLord(2, 3, 4, 2, 2, "nonsense dragon");
-            droDragonLord.BludDragon();
+            //DragonLord droDragonLord = new DragonLord(2, 3, 4, 2, 2, "nonsense dragon");
+            //droDragonLord.BludDragon();
 
-            
+            //FatherDada father = new FatherDada();
+            //father.PolyMe(12);
+            //father.PolyMe("Femi");
+            //father.PolyMe(24587);
 
+            var daughterDada = new DaughterDada();
+            daughterDada.ThisIsTheFamilyName("JOHN");
 
+            FatherDada daugther = new DaughterDada();
+            daugther.ThisIsTheFamilyName("JOHN");
+            daugther.TheFamilyFundsAre(548796548);
+           
             Console.ReadKey();
         }
     }

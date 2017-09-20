@@ -48,6 +48,8 @@
     <Compile Include="DragonConstruction\DragonLord.cs" />
     <Compile Include="Humans\Human.cs" />
     <Compile Include="ListClass\DiscussingLists.cs" />
+    <Compile Include="Polymorph\DaughterDada.cs" />
+    <Compile Include="Polymorph\FatherDada.cs" />
     <Compile Include="ProgramMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -64,6 +66,7 @@
       <Name>Family</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
