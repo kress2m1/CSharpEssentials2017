@@ -372,7 +372,7 @@ namespace New_C_Coding_Class
             Dog dog = new Dog();
             dog.myAge();
             
-            //NOT POSSIBLE
+
             //GrandParentsClass grandParentsClass = new GrandParentsClass();
             //string myGrandPapa = grandParentsClass.GrandFather;
             //Console.WriteLine("My grand fathers name is {0} and" + 

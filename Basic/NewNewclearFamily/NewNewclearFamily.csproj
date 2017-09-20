@@ -44,7 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Baby\newBambino.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="MyFamily.cs" />
+    <Compile Include="ProgramFamily.cs" />
+    <Compile Include="OverloadedMethods\MethodAndOverloading.cs" />
     <Compile Include="Parents\DadandMum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Teen\Youngstars.cs" />
