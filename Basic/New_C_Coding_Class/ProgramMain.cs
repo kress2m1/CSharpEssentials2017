@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ExtendedFamily.Cousins;
+using ExtendedFamily.GrandParents;
+using ExtendedFamily.Nieces;
 using NewNewclearFamily;
 using NewNewclearFamily.Parents;
 using NewNewclearFamily;
@@ -10,7 +13,7 @@ using NewNewclearFamily;
 namespace New_C_Coding_Class
 
 {
-    class Program
+    class ProgramMain
     {
         static void Main(string[] args)
         {
@@ -369,6 +372,22 @@ namespace New_C_Coding_Class
             Dog dog = new Dog();
             dog.myAge();
             
+
+            //GrandParentsClass grandParentsClass = new GrandParentsClass();
+            //string myGrandPapa = grandParentsClass.GrandFather;
+            //Console.WriteLine("My grand fathers name is {0} and" + 
+            //                   "my friend's name is {1}", myGrandPapa, grandParentsClass.);
+
+            NiecesClass nieces = new NiecesClass();
+            nieces.DisplayNieceName();
+            
+            CousinsClass cousinsClass = new CousinsClass();
+            cousinsClass.DisplayNieceName();
+            cousinsClass.CallNieceFriendsName();
+            cousinsClass.CallDetailsForNiece();
+
+
+
 
 
             Console.ReadLine();

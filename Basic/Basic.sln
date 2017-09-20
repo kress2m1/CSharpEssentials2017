@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "New_C_Coding_Class", "New_C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewNewclearFamily", "NewNewclearFamily\NewNewclearFamily.csproj", "{E6417428-8C2D-4BF6-9612-A97B8CE7BB04}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendedFamily", "ExtendedFamily\ExtendedFamily.csproj", "{48520AB1-EC28-44F4-A17B-C90D84210E1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E6417428-8C2D-4BF6-9612-A97B8CE7BB04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6417428-8C2D-4BF6-9612-A97B8CE7BB04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6417428-8C2D-4BF6-9612-A97B8CE7BB04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48520AB1-EC28-44F4-A17B-C90D84210E1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48520AB1-EC28-44F4-A17B-C90D84210E1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48520AB1-EC28-44F4-A17B-C90D84210E1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48520AB1-EC28-44F4-A17B-C90D84210E1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

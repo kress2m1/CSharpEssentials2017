@@ -4,17 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NewNewclearFamily
+namespace New_C_Coding_Class
 {
-    public class Class1
+   public class MyFamily
     {
-        private static void Main(string[] args)
-        {
-
-        }
-
     }
-
-
-
 }
