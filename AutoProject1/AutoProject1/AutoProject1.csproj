@@ -45,17 +45,13 @@
   <ItemGroup>
     <Compile Include="Animal\Cat.cs" />
     <Compile Include="Human\Human.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="ProgramMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExtenededFamily\ExtenededFamily.csproj">
-      <Project>{e38aa1a4-0166-44ba-bc22-133a0e14de5d}</Project>
-      <Name>ExtenededFamily</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Family\Family.csproj">
       <Project>{f9adc897-362b-4eb3-aaef-28ed3754f779}</Project>
       <Name>Family</Name>

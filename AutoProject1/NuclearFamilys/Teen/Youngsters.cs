@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NuclearFamily.Teen
+namespace NuclearFamilys.Teen
 {
-    public class Youngsters
+    class Youngsters
     {
         public int Age = 14;
         public string Name = "Bob";
-        protected string Address ="OYO";
+        protected string Address = "OYO";
 
         public void MyName()
         {
@@ -19,12 +19,13 @@ namespace NuclearFamily.Teen
 
         public void MyAge()
         {
-            Console.WriteLine("My age is"+ Age);
+            Console.WriteLine("My age is" + Age);
         }
 
-        public void myAddress()
+        protected void myAddress()
         {
-            Console.WriteLine("My address is"+ Address);
+            Console.WriteLine("My address is" + Address);
         }
     }
 }
+

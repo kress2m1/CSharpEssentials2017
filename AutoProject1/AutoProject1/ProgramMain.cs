@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 using System.Runtime.Remoting.Services;
 using System.Security.Policy;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
-using ExtenededFamily.Cousins;
-using NuclearFamily.Teen;
+
 
 namespace AutoProject1
 {
-    class Program
+    class ProgramMain
     {
         private static void Main(string[] args)
         {
@@ -197,33 +197,62 @@ namespace AutoProject1
             //      Console.WriteLine("FAILED COURSE");
             //   }
 
-     //class, followed by Object,and new instance
+            //class, followed by Object,and new instance
 
-            Cat husky = new Cat();
-            husky.mew();
-           Console.WriteLine("This is a husky");
+            // Cat husky = new Cat();
+            // husky.mew();
+            //Console.WriteLine("This is a husky");
 
-            Console.WriteLine();
-            Console.WriteLine("This is hushpuppy");
-            Cat hushpuppy = new Cat();
-            hushpuppy .mew();
-            hushpuppy.drink();
-            hushpuppy.eat();
+            // Console.WriteLine();
+            // Console.WriteLine("This is hushpuppy");
+            // Cat hushpuppy = new Cat();
+            // hushpuppy .mew();
+            // hushpuppy.drink();
+            // hushpuppy.eat();
 
-            Console.WriteLine();
+            // Console.WriteLine();
 
-            Human Bobby = new Human();
-            Bobby.talk();
-            Bobby.walk();
-            Bobby.see();
-            Bobby.eat();
+            // Human Bobby = new Human();
+            // Bobby.talk();
+            // Bobby.walk();
+            // Bobby.see();
+            // Bobby.eat();
 
-            Youngsters youngsters = new Youngsters();
-            youngsters.MyName();
+            //Youngsters youngsters = new Youngsters();
+            //youngsters.MyName();
 
-            CousinsClass cousinsClass = new CousinsClass();
+            // NiecesClass niece = new NiecesClass();
+            // niece.DisplayNieceName();
 
-           
+            //// CounsinsClass
+            // CousinsClass cousinsClass = new CousinsClass();
+            // cousinsClass.DisplayNieceName();
+            // cousinsClass.ChangeNieceFriendsName();
+            // cousinsClass.CallDetailsForNiece();
+
+            //// GrandParentsClass
+            // GrandParentsClass grandParentsClass =new GrandParentsClass();
+
+            //string myGrandPapa = grandParentsClass.GrandFather;
+            // {
+            //     Console.WriteLine("My grand fathers name is {0} and " +
+            //         "my friends name is {1}",myGrandPapa,grandParentsClass);
+            //  }
+
+            ////MethodAndOverloading
+            //MethodAndOverloading methodAndOverloading = new MethodAndOverloading();
+            //methodAndOverloading.AdditionMethod();
+            //Console.WriteLine("........");
+            //methodAndOverloading.AdditionMethod(48, 50, 20);
+            //methodAndOverloading.AdditionMethod(100, 23);
+            //methodAndOverloading.AdditionMethod(25, 78);
+            //methodAndOverloading.AdditionMethod(44, 28);
+            //Console.WriteLine(".......................");
+
+            // StudentGrades studentgradesclass = new StudentGrades();
+
+            
+
             Console.ReadKey();
             
 

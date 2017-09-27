@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExtenededFamily
+namespace ExtendedFamilies.GrandParentts
 {
-    class ProgramExtendedFamily
+    class Grandparentscs
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }

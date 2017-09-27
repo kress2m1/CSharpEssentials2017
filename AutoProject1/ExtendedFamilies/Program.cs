@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using NuclearFamily.Teen;
 
- namespace Family.Parent
+namespace ExtendedFamilies
 {
-    public class DadAndMum:Youngsters
-    
-        
-{
-    
-}
-    
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        }
+    }
 }
