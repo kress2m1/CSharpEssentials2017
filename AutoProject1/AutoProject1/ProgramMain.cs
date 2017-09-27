@@ -7,6 +7,9 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using AutoProject1.Arrays;
+using ExtendedFamilies.Cousins;
+using ExtendedFamilies.Nieces;
 
 
 namespace AutoProject1
@@ -225,18 +228,20 @@ namespace AutoProject1
             // niece.DisplayNieceName();
 
             //// CounsinsClass
-            // CousinsClass cousinsClass = new CousinsClass();
-            // cousinsClass.DisplayNieceName();
-            // cousinsClass.ChangeNieceFriendsName();
-            // cousinsClass.CallDetailsForNiece();
+            //CousinsClass cousinsClass = new CousinsClass();
+            //cousinsClass.DisplayNieceName();
+            //cousinsClass.CallNiecefriendsName();
+            //cousinsClass.CallDetailsForNiece();
 
-            //// GrandParentsClass
-            // GrandParentsClass grandParentsClass =new GrandParentsClass();
+            ////// GrandParentsClass
+            //GrandParentsClass grandParentsClass =new GrandParentsClass();
+            
 
             //string myGrandPapa = grandParentsClass.GrandFather;
             // {
-            //     Console.WriteLine("My grand fathers name is {0} and " +
-            //         "my friends name is {1}",myGrandPapa,grandParentsClass);
+            // //   int myGrandPapa = 0;
+            // Console.WriteLine("My grand fathers name is {0} and " +
+            //      "my friends name is {1}",myGrandPapa,grandParentsClass);
             //  }
 
             ////MethodAndOverloading
@@ -251,11 +256,20 @@ namespace AutoProject1
 
             // StudentGrades studentgradesclass = new StudentGrades();
 
-            
+            ArrayClass arrayClass = new ArrayClass();
+            arrayClass.AgeofPatients();
+            arrayClass.TeacherName();
+            arrayClass.CourseNames();
+
 
             Console.ReadKey();
             
 
         }
+    }
+
+    internal class GrandParentsClass
+    {
+        public string GrandFather { get; internal set; }
     }
 }

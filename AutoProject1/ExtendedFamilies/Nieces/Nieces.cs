@@ -9,7 +9,7 @@ namespace ExtendedFamilies.Nieces
    public class NiecesClass
     {
         //These are certain variables
-       private string Niecename = "Rachael";
+       public string NieceName = "Rachael";
        private string NieceLastName = "Oluwadeji";
        public string NieceAddress = "Csharp class";
        protected string NieceFriendsName = "Titi";
@@ -18,10 +18,10 @@ namespace ExtendedFamilies.Nieces
         //These are methods
        public void DisplayNieceName()
        {
-           Console.WriteLine("My name is" + Niecename);
+           Console.WriteLine("My name is" + NieceName);
             // Example of interpolation
             //  Console.WriteLine("My name is{0}", Niecename,NieceAddress);
-           Console.WriteLine("My name is{0}", Niecename);
+           Console.WriteLine("My name is{0}", NieceName);
             }
 
        protected void FriendsOfNieces()

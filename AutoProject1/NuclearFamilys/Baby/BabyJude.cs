@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NuclearFamilys.Baby
 {
-    class BabyJude
+   public class BabyJude
     {
         private string BabyName = "Boniface";
         private string LastName = "peter";

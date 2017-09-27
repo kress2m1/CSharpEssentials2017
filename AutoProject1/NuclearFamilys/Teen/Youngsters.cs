@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NuclearFamilys.Teen
 {
-    class Youngsters
+   public class Youngsters
     {
         public int Age = 14;
         public string Name = "Bob";

@@ -19,6 +19,9 @@ namespace Family
             Console.WriteLine("..........");
             Birds birds = new Birds();
          string newNumOfBirds = birds.NameOfBird;
+            
+            
+
          }
         }
     }

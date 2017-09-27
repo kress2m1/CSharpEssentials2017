@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Birds.cs" />
     <Compile Include="MyFamily.cs" />
     <Compile Include="ProgramFamily.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

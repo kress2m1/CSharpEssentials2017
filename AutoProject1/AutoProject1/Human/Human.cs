@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AutoProject1
 {
-    class Human
+    public class Human
     {
         // Properties of Human
          int numberofHead = 1;

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NuclearFamilys
+namespace ExtendedFamilies
 {
-    class Program
+    class ProgramExtededfamilies
     {
         static void Main(string[] args)
         {

@@ -10,14 +10,25 @@ namespace ExtendedFamilies.Cousins
 {
    public class CousinsClass : NiecesClass
    {
-       private string CousinsName = "Tee";
+       public string CousinsName = "Tee";
        private string CousinslastName = "Taye";
        public string CousinsAddress = "London";
        protected string CousinsFriendsName = "Kayode";
 
-       public void ChangeNiecefriendsName()
+       public void CallNiecefriendsName()
        {
            Console.WriteLine("My nieces friends name is{0}", NieceFriendsName);
+
+       }
+
+       public void CallDetailsForNiece()
+       {
+            NiecesClass nieces =new NiecesClass();
+           string newNiecesName = nieces.NieceName;
+           Console.WriteLine("My niece lives at{0}", NieceAddress);
+           Console.WriteLine("And her name is {0}", NieceName);
+           newNiecesName = "Bola";
+           Console.WriteLine("My name is now {0}", newNiecesName);
 
        }
    }

@@ -44,9 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cousins\Cousins.cs" />
-    <Compile Include="GrandParentts\Grandparentscs.cs" />
+    <Compile Include="GrandParentts\GrandparentClass.cs" />
     <Compile Include="Nieces\Nieces.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="ProgramExtededfamilies.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

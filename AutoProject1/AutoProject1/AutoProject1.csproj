@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animal\Cat.cs" />
+    <Compile Include="Arrays\ArrayClass.cs" />
     <Compile Include="Human\Human.cs" />
     <Compile Include="ProgramMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -52,9 +53,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Family\Family.csproj">
-      <Project>{f9adc897-362b-4eb3-aaef-28ed3754f779}</Project>
-      <Name>Family</Name>
+    <ProjectReference Include="..\ExtendedFamilies\ExtendedFamilies.csproj">
+      <Project>{733eb88f-4907-46a9-a1e9-46e3d4b7a026}</Project>
+      <Name>ExtendedFamilies</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NuclearFamilys\NuclearFamilys.csproj">
+      <Project>{4f651fb7-cc29-4807-ae48-cb1489ee16ce}</Project>
+      <Name>NuclearFamilys</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
