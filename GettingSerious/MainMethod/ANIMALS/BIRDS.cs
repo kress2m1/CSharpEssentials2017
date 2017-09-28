@@ -10,10 +10,10 @@ namespace MainMethod.ANIMALS
     { 
         //variables/xteristics of object BIRDS
 
-        int LEGS = 2;
-        int EYES = 2;
-        int WINGS = 2;
-        int BEAK = 1;
+        int NumberOfLEGS = 2;
+        int NumberOfEYES = 2;
+        int NumberOfWINGS = 2;
+        int NumberOfBEAK = 1;
 
         // method = performance or actions of the objec RUN  
 
