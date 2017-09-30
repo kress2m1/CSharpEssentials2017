@@ -24,6 +24,24 @@ namespace NewNewclearFamily
             methodAndOverloading.AdditionMethod(44, 28);
             Console.WriteLine(".............");
             methodAndOverloading.AdditionMethod(14, 21, 10);
+            Console.WriteLine(".............");
+            Birds birds = new Birds();
+            //we get rid of it because it is complaining as a result of getters n setters
+            //string newflameOfBirds = birds.NameOfBird;
+            //newflameOfBirds = "Parrots";
+            //Console.WriteLine(newflameOfBirds);
+            
+            //birds.GetNameOfBird();
+            //birds.GetNumOfEyes();
+
+            Console.WriteLine(birds.GetNameOfBird());
+            Console.WriteLine(birds.GetNumOfEyes());
+
+            birds.SetNameOfBird("Eagle");
+            birds.SetNumOfEyes(4);
+
+            Console.WriteLine(birds.GetNameOfBird());
+            Console.WriteLine(birds.GetNumOfEyes());
 
 
 
