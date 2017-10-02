@@ -4,8 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Family.Inherittance;
+using Family.Interfaces;
 using Family.OverloadedMethods;
 using Family.Teen;
+using Family.ToyotaCar;
 
 namespace Family
 {
@@ -41,12 +43,22 @@ namespace Family
            
             //birds.SetNameOfBird("Eagle");
             //birds.SetNumOfEyes(4);
-
             //Console.WriteLine(birds.GetNameOfBird());
             //Console.WriteLine(birds.GetNumOfEyes());
             
-            PrimaryClass primaryClass = new PrimaryClass();
-            primaryClass.DeclarePrimaryClass();
+            //PrimaryClass primaryClass = new PrimaryClass();
+            //primaryClass.DeclarePrimaryClass();
+
+            var toyotaLexus = new ToyotaLexus();
+            toyotaLexus.Accelerate();
+
+            ICars toyota = new ToyotaLexus();
+            toyota.Drive();
+            toyota.Stop();
+            toyota.TootHorn();
+            
+            IVehicle toyotaV = new ToyotaLexus();
+            toyotaV.HaveTyres(5);
 
             Console.ReadKey();
         }
