@@ -43,7 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstraction\AnitaPerson.cs" />
+    <Compile Include="Abstraction\KayPerson.cs" />
+    <Compile Include="Abstraction\PersonObject.cs" />
+    <Compile Include="Abstraction\TitiPerson.cs" />
     <Compile Include="Cousins\CousinsClass.cs" />
+    <Compile Include="ExceptionHandler\ExceptionManager.cs" />
     <Compile Include="GrandParents\GrandParentsClass.cs" />
     <Compile Include="Nieces\NiecesClass.cs" />
     <Compile Include="ProgramExtendedFamily.cs" />
