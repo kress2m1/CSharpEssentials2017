@@ -30,6 +30,8 @@ namespace Com.ShoppingCart.Project
         public void CallAnotherTest()
         {
             Console.WriteLine("This is another test");
+            var pageSource = _driver.PageSource.ToLower().Contains("contact us".ToLower());
+            Assert.IsTrue(pageSource, "Contact Us not in page source");
         }
 
         [TestCleanup]
