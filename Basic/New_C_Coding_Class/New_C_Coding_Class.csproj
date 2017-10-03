@@ -43,11 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Animal\Dog.cs" />
+    <Compile Include="Humans\Humans.cs" />
+    <Compile Include="ProgramMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ExtendedFamily\ExtendedFamily.csproj">
+      <Project>{48520ab1-ec28-44f4-a17b-c90d84210e1d}</Project>
+      <Name>ExtendedFamily</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NewNewclearFamily\NewNewclearFamily.csproj">
+      <Project>{e6417428-8c2d-4bf6-9612-a97b8ce7bb04}</Project>
+      <Name>NewNewclearFamily</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
