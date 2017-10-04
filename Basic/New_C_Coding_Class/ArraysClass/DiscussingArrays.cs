@@ -18,7 +18,7 @@ namespace New_C_Coding_Class.ArraysClass
 
             Console.WriteLine(ageofStudents[0]);
             Console.WriteLine(ageofStudents[1]);
-            Console.WriteLine(ageofStudents[2]);
+            Console.WriteLine(ageofStudents[2]);//test
 
        }
 
