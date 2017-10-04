@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{74150BDA-84FB-4056-862B-05512A39BB82}</ProjectGuid>
+    <ProjectGuid>{909E033F-A6B7-4707-A5E0-227647723F32}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>C_Coding_Basics</RootNamespace>
-    <AssemblyName>C_Coding_Basics</AssemblyName>
+    <RootNamespace>DeenAuto_2017</RootNamespace>
+    <AssemblyName>DeenAuto 2017</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,30 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animal\Dog.cs" />
-    <Compile Include="ArraysClass\DiscussingArrays.cs" />
-    <Compile Include="DragonConstruction\DragonLord.cs" />
-    <Compile Include="Humans\Human.cs" />
-    <Compile Include="ListClass\DiscussingLists.cs" />
-    <Compile Include="Polymorph\DaughterDada.cs" />
-    <Compile Include="Polymorph\FatherDada.cs" />
-    <Compile Include="ProgramMain.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ExtendedFamily\ExtendedFamily.csproj">
-      <Project>{47d28fbf-2cbc-4149-94b3-bd2e92b6f626}</Project>
-      <Name>ExtendedFamily</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Family\Family.csproj">
-      <Project>{9866bb8e-217c-496f-a13f-4803f6fd726c}</Project>
-      <Name>Family</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
