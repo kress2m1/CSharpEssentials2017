@@ -18,26 +18,35 @@ namespace Com.ShoppingCart.Project
             _driver.Navigate().GoToUrl("http://automationpractice.com/index.php");
         }
 
-        [TestMethod]
+        [TestMethod, TestCategory("Smoke")]
         public void GetPageTitle()
         {
-            Console.WriteLine("This is a test to get the page title");
             var pageTitle = _driver.Title;
-            Assert.AreEqual(pageTitle, "My Store");
+            Assert.AreEqual(pageTitle, "My Store", "The expected & actual don't match");
+        }
+
+        [TestMethod, TestCategory("UAT")]
+        public void CheckForCookies()
+        {
+            var allCookies = _driver.Manage().Cookies.AllCookies;
+            foreach (var cookie in allCookies)
+            {
+                Console.WriteLine("The list of cookies are {0}", cookie.ToString());
+            }
         }
 
         [TestMethod]
-        public void CallAnotherTest()
+        public void ConfirmUserOnHomePage()
         {
-            Console.WriteLine("This is another test");
-            var pageSource = _driver.PageSource.ToLower().Contains("contact us".ToLower());
-            Assert.IsTrue(pageSource, "Contact Us not in page source");
+            var contactUs = _driver.PageSource.ToLower().Contains("header_logo".ToLower());
+            Assert.IsTrue(contactUs);
         }
 
         [TestCleanup]
         public void TearDownTest()
         {
             _driver.Quit();
+            //_driver.Close();
         }
     }
 }
