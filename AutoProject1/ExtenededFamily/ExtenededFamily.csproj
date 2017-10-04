@@ -46,7 +46,6 @@
     <Compile Include="Cousins\CousinsClass.cs" />
     <Compile Include="GrandParents\GrandParentsClass.cs" />
     <Compile Include="Nieces\NiecesClass.cs" />
-    <Compile Include="ProgramExtendedFamily.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -11,7 +11,7 @@ namespace Family.Teen
     public class Teenager : Bambino
     {
 
-        private string TeenName = "Tunji";
+        private string _teenName = "Tunji";
         public int TeenAge = 18;
         protected string TeenAddress = "Over here";
 

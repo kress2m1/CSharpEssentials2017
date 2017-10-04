@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AutoProject1
 {
-    class Cat
+   public class Cat
     {
          int numberofeyes = 2;
          int numberoflegs = 4;

@@ -13,23 +13,31 @@ namespace Family.OverloadedMethods
         public int ThirdNum;
         public int SixthNum;
         public int NinthNum;
+
+        public MethodAndOverloading(int thirdNum, int sixthNum, int ninthNum)
+        {
+            ThirdNum = thirdNum;
+            SixthNum = sixthNum;
+            NinthNum = ninthNum;
+        }
+
         public void AdditionMethod()
         {
             ThirdNum = FirstNum + SecondNum;
             Console.WriteLine("addition of one and two is: " + ThirdNum);
         }
 
-        public int AdditionMethod(int FourthNum, int FifthNum)
+        public int AdditionMethod(int fourthNum, int fifthNum)
         {
-            SixthNum = FourthNum * FifthNum;
-            Console.WriteLine("{0} * {1} = {2}", FourthNum, FifthNum, SixthNum);
+            SixthNum = fourthNum * fifthNum;
+            Console.WriteLine("{0} * {1} = {2}", fourthNum, fifthNum, SixthNum);
             return SixthNum;
         }
 
-        public int AdditionMethod(int SeventhNum, int EighthNum, int TenthNum)
+        public int AdditionMethod(int seventhNum, int eighthNum, int tenthNum)
         {
-            NinthNum = SeventhNum + EighthNum + EighthNum + TenthNum;
-            Console.WriteLine("{0} + {1} + {2} + {3} = {4}", SeventhNum, EighthNum, EighthNum, TenthNum, NinthNum);
+            NinthNum = seventhNum + eighthNum + eighthNum + tenthNum;
+            Console.WriteLine("{0} + {1} + {2} + {3} = {4}", seventhNum, eighthNum, eighthNum, tenthNum, NinthNum);
             return NinthNum;
         }
     }
