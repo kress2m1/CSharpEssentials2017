@@ -9,6 +9,7 @@ using ExtendedFamily.Nieces;
 using NewNewclearFamily;
 using NewNewclearFamily.Parents;
 using NewNewclearFamily;
+using New_C_Coding_Class.ArraysClass;
 
 namespace New_C_Coding_Class
 
@@ -17,24 +18,24 @@ namespace New_C_Coding_Class
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
-            Console.WriteLine("World");
-            //string welcome = "Hello World";
-            //string name = "Anita";
-            //Console.WriteLine(name);
-            Console.WriteLine(); //this is used to creat an empty space
+            //Console.WriteLine("Hello");
+            //Console.WriteLine("World");
+            ////string welcome = "Hello World";
+            ////string name = "Anita";
+            ////Console.WriteLine(name);
+            //Console.WriteLine(); //this is used to creat an empty space
 
-            /** this sis how you write in
-             * a multiline
-             * comment
-             */
+            /////** this sis how you write in
+            // * a multiline
+            // * comment
+            // */
 
             //float numOne = 2;
            // int numOne = 2;
-            int numOne = 55;
-           // int numTwo = 3; //numTwo has been wriitten using camel casing
-            //float numTwo = 3;
-            int numTwo = 33;
+           // int numOne = 55;
+           //// int numTwo = 3; //numTwo has been wriitten using camel casing
+           // //float numTwo = 3;
+           // int numTwo = 33;
 
             //double result = numOne + numTwo + numTwo + numOne;
             //int result = numOne + numTwo + numTwo + numOne;
@@ -108,7 +109,7 @@ namespace New_C_Coding_Class
         //    else if (userInput.Equals("Ayo"))
 
         //    {
-                Console.WriteLine("Ayo");
+                //Console.WriteLine("Ayo");
 
          //   }
 
@@ -337,40 +338,40 @@ namespace New_C_Coding_Class
 
             //CONTROL STATEMENT
             // Class --> Object = New Instance --> Constructor of the new object
-            Dog husky = new Dog();
-            Console.WriteLine("This is a husky");
-            husky.bark();
+            //Dog husky = new Dog();
+            //Console.WriteLine("This is a husky");
+            //husky.bark();
          
 
 
-            Console.WriteLine();
-            Console.WriteLine("This is a Hush Puppy");
-            Dog hushpuppy = new Dog();
-            hushpuppy.bark();
-            hushpuppy.drink();
-            hushpuppy.eat();
+            //Console.WriteLine();
+            //Console.WriteLine("This is a Hush Puppy");
+            //Dog hushpuppy = new Dog();
+            //hushpuppy.bark();
+            //hushpuppy.drink();
+            //hushpuppy.eat();
 
-            //Create Another  Class --> Object = New Instance --> Constructor of the new object
-            Humans Male = new Humans();
-            Console.WriteLine("This is another Male");
-            Male.digest();
-            Male.see();
+            ////Create Another  Class --> Object = New Instance --> Constructor of the new object
+            //Humans Male = new Humans();
+            //Console.WriteLine("This is another Male");
+            //Male.digest();
+            //Male.see();
 
-            Console.WriteLine();
-            Console.WriteLine("This is a new man");
-            Humans Maleboy = new Humans();
-            Maleboy.see();
-            Maleboy.think();
+            //Console.WriteLine();
+            //Console.WriteLine("This is a new man");
+            //Humans Maleboy = new Humans();
+            //Maleboy.see();
+            //Maleboy.think();
 
-            Youngstars youngstars = new Youngstars();
-            // Now let us call the variable in Younstars and let us see what will be displayed for us
+            //Youngstars youngstars = new Youngstars();
+            //// Now let us call the variable in Younstars and let us see what will be displayed for us
          // youngstars.myName(); // we can only see my name because it is public. All others private and protected will not be displayed
              
                   
-            DadandMum dadandMum = new DadandMum();
+            //DadandMum dadandMum = new DadandMum();
             
-            Dog dog = new Dog();
-            dog.myAge();
+            //Dog dog = new Dog();
+            //dog.myAge();
             
 
             //GrandParentsClass grandParentsClass = new GrandParentsClass();
@@ -378,22 +379,24 @@ namespace New_C_Coding_Class
             //Console.WriteLine("My grand fathers name is {0} and" + 
             //                   "my friend's name is {1}", myGrandPapa, grandParentsClass.);
 
-            NiecesClass nieces = new NiecesClass();
-            nieces.DisplayNieceName();
+            //NiecesClass nieces = new NiecesClass();
+            //nieces.DisplayNieceName();
             
-            CousinsClass cousinsClass = new CousinsClass();
-            cousinsClass.DisplayNieceName();
-            cousinsClass.CallNieceFriendsName();
-            cousinsClass.CallDetailsForNiece();
+            //CousinsClass cousinsClass = new CousinsClass();
+            //cousinsClass.DisplayNieceName();
+            //cousinsClass.CallNieceFriendsName();
+            //cousinsClass.CallDetailsForNiece();
 
+           // Console.ReadLine();
 
+            DiscussingArrays discussingArrays = new DiscussingArrays();
+            discussingArrays.AgeofStudents();
+            discussingArrays.TeacherName();
+            discussingArrays.CourseNames();
 
+            
 
-
-            Console.ReadLine();
-
-
-              //  Console.ReadKey(); //read any key that user press
+            Console.ReadKey(); //read any key that user press
 
 
 
