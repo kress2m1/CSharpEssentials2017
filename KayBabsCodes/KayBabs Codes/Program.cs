@@ -52,6 +52,7 @@ namespace KayBabs_Codes
             {
                 Console.WriteLine("numOne is < numTwo");
             }
+
             Console.WriteLine("Please enter a name:");
             string userInput = Console.ReadLine();
 
@@ -88,8 +89,14 @@ namespace KayBabs_Codes
                     Console.WriteLine("The food item entered is not sold here");
                     break;
             }
-
-
+            if (b)
+            {
+                
+            }
+            else
+            {
+                
+            }
             Console.ReadKey();
         }
     }

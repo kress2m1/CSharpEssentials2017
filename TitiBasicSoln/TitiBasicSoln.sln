@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TitiBasic", "TitiBasic\TitiBasic.csproj", "{FAA69078-62E2-425E-8803-70047ABF884D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Family", "Family\Family.csproj", "{C2046D1B-814B-44B4-B743-D077F783DE4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendedFamily", "ExtendedFamily\ExtendedFamily.csproj", "{0444D2E2-F5C4-4669-8AB8-9EA550DE0900}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{FAA69078-62E2-425E-8803-70047ABF884D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAA69078-62E2-425E-8803-70047ABF884D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAA69078-62E2-425E-8803-70047ABF884D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2046D1B-814B-44B4-B743-D077F783DE4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2046D1B-814B-44B4-B743-D077F783DE4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2046D1B-814B-44B4-B743-D077F783DE4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2046D1B-814B-44B4-B743-D077F783DE4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0444D2E2-F5C4-4669-8AB8-9EA550DE0900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0444D2E2-F5C4-4669-8AB8-9EA550DE0900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0444D2E2-F5C4-4669-8AB8-9EA550DE0900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0444D2E2-F5C4-4669-8AB8-9EA550DE0900}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
