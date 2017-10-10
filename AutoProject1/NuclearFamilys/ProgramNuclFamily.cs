@@ -9,7 +9,7 @@ namespace NuclearFamilys
 {
    public class ProgramNuclearfamily 
     {
-        private static bool newNameOfBirds;
+        
 
         static void Main(string[] args)
         {
