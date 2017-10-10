@@ -47,5 +47,10 @@ namespace NuclearFamilys.OverloadedMethod
 
             }
         }
+
+        public void AdditionMethod(int v1, int v2, int v3)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
