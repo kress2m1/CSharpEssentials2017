@@ -93,6 +93,7 @@ namespace Com.ShoppingCart.Project
         [TestMethod, TestCategory("UAT")]
         public void ConfirmUserOnHomePage()
         {
+            Console.WriteLine("sample test to be created here");
         }
 
         [TestCleanup]
