@@ -15,7 +15,7 @@ namespace Com.ShoppingCartTask
         {
             _driver = new ChromeDriver();
             _driver.Manage().Window.Maximize();
-            _driver.Navigate().GoToUrl("http://automationpractice.com/index.php");
+            _driver.Navigate().GoToUrl("http://www.next.co.uk");
         }
 
         [TestMethod, TestCategory("Smoke")]
@@ -24,7 +24,7 @@ namespace Com.ShoppingCartTask
             //Console.WriteLine("This is a test to get the page title");
             //let us take away the consolewriteline
             var pageTitle = _driver.Title;
-            Assert.AreEqual(pageTitle, "My Store", "The expected & actual don't match");
+            Assert.AreEqual(pageTitle, "Next Official Site: Online Fashion, Kids Clothes & Homeware", "The expected & actual don't match");
             //the above means run the code get the page title and compare it to
             //what i know it shd be "My Store"
         }
