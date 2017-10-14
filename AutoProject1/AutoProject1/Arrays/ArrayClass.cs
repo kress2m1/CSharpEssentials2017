@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AutoProject1.Arrays
 {
     public class ArrayClass
     {
-        private string Biology;
-        private string Physics;
-        private int teacher;
-        private int course;
+        public string Biology;
+        public string Physics;
+        public int teacher;
+        public int course;
 
         public string Maths { get; private set; }
 
@@ -24,41 +20,57 @@ namespace AutoProject1.Arrays
             ageofPatients[2] = 26;
             ageofPatients[3] = 40;
 
-            Console.WriteLine(ageofPatients [0]);
-            Console.WriteLine(ageofPatients [1]);
-            Console.WriteLine(ageofPatients [2]);
-            Console.WriteLine(ageofPatients [3]);
+            Console.WriteLine(ageofPatients[0]);
+            Console.WriteLine(ageofPatients[1]);
+            Console.WriteLine(ageofPatients[2]);
+            Console.WriteLine(ageofPatients[3]);
         }
 
         public void TeacherName()
         {
             string[] teachersName = {"Olu", "Tolu", "Ben", "Richie"};
-            for (int teacher = 0; teacher < teachersName.Length; teacher++)
+            foreach (var teacher in teachersName)
             {
-
-                Console.WriteLine("The names of the teachers are: {0}", teachersName[teacher]);
+                Console.WriteLine("The names of the teachers are: {0}", teacher);
             }
             Console.WriteLine("..........");
             Array.Sort(teachersName);
-            Console.WriteLine("teacherName");
+            foreach (var teacher in teachersName)
+            {
+                Console.WriteLine("The names of the teachers are: {0}", teacher);
+            }
         }
 
         public void CourseNames()
         {
-            string[] courseNames = new[] {"Maths", "Biology", "Physics"};
-            foreach (var Course in courseNames)
+            string[] courseNames = { "Maths", "Biology", "Physics" };
+            foreach (var course in courseNames)
 
-            
+
             {
-                if (!course.Equals("Maths")) continue;
+                if (course.Equals("Maths"))
+                {
+                    Console.WriteLine("The courses available include{0}", course);
+                    break;
+                }
+                if (!course.Equals("Physics")) continue;
                 Console.WriteLine("The course names are: {0}", course);
                 break;
+            }
+
+            Array.Reverse(courseNames);
+            foreach (var course in courseNames)
+            {
+                Console.WriteLine("The list of courses available in reverse: {0}", course);
+            }
+            {
+                
             }
         }
 
 
-    
 
 
-}
+
+    }
 }
