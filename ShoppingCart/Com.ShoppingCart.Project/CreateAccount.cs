@@ -10,7 +10,7 @@ using OpenQA.Selenium.Support.UI;
 namespace Com.ShoppingCart.Project
 {
     [TestClass]
-    public class PageTest
+    public class CreateAccount
     {
         private IWebDriver _driver;
 
@@ -88,20 +88,13 @@ namespace Com.ShoppingCart.Project
             //click register button
             var createAccountButton = _driver.FindElement(By.Id("register-button"));
             createAccountButton.Click();
-        }
-
-        [TestMethod, TestCategory("UAT")]
-        public void ConfirmUserOnHomePage()
-        {
-            Console.WriteLine("sample test to be created here");
+            Thread.Sleep(3000);
         }
 
         [TestCleanup]
         public void TearDownTest()
         {
-            Thread.Sleep(10000);
             _driver.Quit();
-            //_driver.Close();
         }
     }
 }

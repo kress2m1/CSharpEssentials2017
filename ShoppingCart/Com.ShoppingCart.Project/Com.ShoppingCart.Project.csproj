@@ -38,6 +38,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="WebDriver, Version=3.6.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Selenium.WebDriver.3.6.0\lib\net45\WebDriver.dll</HintPath>
@@ -56,17 +57,22 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="PageTest.cs" />
+    <Compile Include="CreateAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LoginUser.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Files\userLoginDetails.csv" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
