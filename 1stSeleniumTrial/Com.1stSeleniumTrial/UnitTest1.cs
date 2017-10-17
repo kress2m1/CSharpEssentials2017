@@ -17,7 +17,7 @@ namespace Com._1stSeleniumTrial
             _driver.Manage().Window.Maximize();
             _driver.Navigate().GoToUrl("http://automationpractice.com/index.php");
         }
-        [TestMethod]
+        [TestMethod, TestCategory("Smoke")]
         public void GetPageTitle()
         {
             Console.WriteLine("This is a test to get page title");
@@ -25,11 +25,24 @@ namespace Com._1stSeleniumTrial
             Assert.AreEqual(pagetitle, "My Store");
         }
 
-        [TestMethod]
-        public void CallOneOtherTest()
+        [TestMethod, TestCategory("UAT"), Ignore]
+        public void CheckForCookies()
         {
-            Console.WriteLine("One other Test");
+        
+            var AllCookies = _driver.Manage().Cookies.AllCookies;
+            foreach (var cookie in AllCookies)
+            {
+                Console.WriteLine("List of cookies are {0}",cookie.ToString());
+            }
         }
+
+        [TestMethod]
+        public void ConfirmUserOnHomePage()
+        {
+          var contactUs =  _driver.PageSource.ToLower().Contains("Contact Us".ToLower());
+            Assert.IsTrue(contactUs);
+        }
+
 
         [TestCleanup]
         public void TearDownTest()
