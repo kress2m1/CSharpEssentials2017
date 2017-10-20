@@ -20,9 +20,10 @@ namespace Com.Bags
            // _driver = new FirefoxDriver();
             _driver = new ChromeDriver();
             _driver.Manage().Window.Maximize();
-           // _driver.Navigate().GoToUrl("http://www.capita.com/"); //"https://www.autodata-group.com/uk/");
+            // _driver.Navigate().GoToUrl("http://www.capita.com/"); //"https://www.autodata-group.com/uk/");
 
-             _driver.Navigate().GoToUrl("http://automationpractice.com/index.php");
+            _driver.Navigate().GoToUrl("http://automationpractice.com/index.php");
+             //_driver.Navigate().GoToUrl("http://demo.nopcommerce.com/");
         }
 
         [TestMethod, TestCategory("UAT")]
@@ -38,7 +39,7 @@ namespace Com.Bags
         [TestMethod, TestCategory("Smoke")]
         public void CreateAccount()
         {
-            Console.WriteLine("My Test 2");
+            //Console.WriteLine("My Test 2");
 
             var wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(30));
             _driver.FindElement(By.ClassName("login")).Click();
