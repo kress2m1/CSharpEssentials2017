@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Support.UI;
 
 namespace Com.ShoppingCartTask
 {
@@ -14,19 +17,72 @@ namespace Com.ShoppingCartTask
         public void SetUpTest()
         {
             _driver = new ChromeDriver();
+           // _driver = new FirefoxDriver();
             _driver.Manage().Window.Maximize();
-            _driver.Navigate().GoToUrl("http://automationpractice.com/index.php");
+            //_driver.Navigate().GoToUrl("http://www.next.co.uk");
+            _driver.Navigate().GoToUrl("http://automationpractice.com");
         }
 
         [TestMethod, TestCategory("Smoke")]
-        public void GetPageTitle()
+       // public void GetPageTitle()
+        public void RegisterAccount()
         {
             //Console.WriteLine("This is a test to get the page title");
             //let us take away the consolewriteline
-            var pageTitle = _driver.Title;
-            Assert.AreEqual(pageTitle, "My Store", "The expected & actual don't match");
+            // var pageTitle = _driver.Title;
+            // Assert.AreEqual(pageTitle, "Next Official Site: Online Fashion, Kids Clothes & Homeware", "The expected & actual don't match");
             //the above means run the code get the page title and compare it to
             //what i know it shd be "My Store"
+            
+            //decare wait method
+            var wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(30));
+            _driver.FindElement(By.ClassName("login")).Click();
+            var signInPagetitle = _driver.Title;
+            Assert.AreEqual(signInPagetitle.ToLower(), "Login - My Store".ToLower());
+            //convert all chracter to lower chracter
+
+            //select email filed and send email address
+            var email = _driver.FindElement(By.Id("email_create"));
+            email.SendKeys("kala@yahoo.com");
+
+            //find submit button and click it
+            var submitButton = _driver.FindElement(By.Id("SubmitCreate"));
+            submitButton.Click();
+
+            //Select the radio button for Mr
+            //wait.Until(ExpectedConditions.ElementIsVisible(By.Id("id_gender1")));
+            //var selectMr = _driver.FindElement(By.Id("id_gender1"));
+            //selectMr.Click();
+
+            ////enter firstname
+            //wait.Until(ExpectedConditions.ElementIsVisible(By.Id("customer_firstname")));
+            //var firstName = _driver.FindElement(By.Id("customer_firstname"));
+            //firstName.SendKeys("Deji");
+
+            ////Select Day of Birth
+            //wait.Until(ExpectedConditions.ElementIsVisible(By.Id("days")));
+            //var dayOfBirth = _driver.FindElement(By.Id("days"));
+            //var selectDayOfBirth = new SelectElement(dayOfBirth);
+            //selectDayOfBirth.SelectByValue("2");
+
+            ////select month of birth
+            //wait.Until(ExpectedConditions.ElementIsVisible(By.Id("months")));
+            //var monthOfBirth = _driver.FindElement(By.Id("months"));
+            //var selectMonthOfBirth = new SelectElement(monthOfBirth);
+            //selectMonthOfBirth.SelectByIndex(4);
+
+            ////select year of Birth
+            //wait.Until(ExpectedConditions.ElementIsVisible(By.Id("years")));
+            //var yearOfBirth = _driver.FindElement(By.Id("years"));
+            //var selectYearOfBirth = new SelectElement(yearOfBirth);
+            //selectYearOfBirth.SelectByValue("2");
+
+            //select checkbox
+            wait.Until(ExpectedConditions.ElementIsVisible(By.Id("newsletter")));
+            var newsletterSignUp = _driver.FindElement(By.Id("newsletter"));
+            newsletterSignUp.Click();
+
+
         }
 
         [TestMethod, TestCategory("UAT")]
@@ -52,6 +108,7 @@ namespace Com.ShoppingCartTask
         [TestCleanup]
         public void TearDownTest()
         {
+            Thread.Sleep(10000); //it is a type of wait 
             _driver.Quit(); // will close everything
            //_driver.Close(); //will only close the most recent one
 
