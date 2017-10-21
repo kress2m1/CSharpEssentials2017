@@ -10,7 +10,7 @@ using OpenQA.Selenium.Support.UI;
 namespace Com.Bags
 {
     [TestClass]
-    public class UnitTest1
+    public class CreateAcount
     {
         private IWebDriver _driver;
 

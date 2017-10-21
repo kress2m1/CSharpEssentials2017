@@ -8,7 +8,7 @@ using OpenQA.Selenium.Support.UI;
 namespace TradingKeys
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTestTrade1
     {
 
         IWebDriver _driver;
