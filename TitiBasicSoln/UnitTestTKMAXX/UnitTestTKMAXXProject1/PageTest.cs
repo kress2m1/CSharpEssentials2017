@@ -16,7 +16,7 @@ namespace UnitTestTKMAXXProject1
         {
             _driver = new ChromeDriver();
             _driver.Manage().Window.Maximize();
-            _driver.Navigate().GoToUrl("https://www.tkmaxx.com/uk/en/");
+            _driver.Navigate().GoToUrl("https://www.aldi.co.uk//");
             
         }
 
@@ -25,12 +25,16 @@ namespace UnitTestTKMAXXProject1
         public void GetPageTitle()
         {
             var PageTitle = _driver.Title;
-            Assert.AreEqual(PageTitle, "Knitwear - Cardigans - Jumpers - Designer - TK Maxx - TK Maxx");
+            Assert.AreEqual(PageTitle, "ALDI UK | Homepage");
         }
         [TestMethod]
 
-        public void TestMethod1()
+        public void ProductSearch()
         {
+            var Search = _driver.FindElements(By.XPath("button button--interaction button--round js-typeahead-open".));
+            
+
+
 
         }
 
