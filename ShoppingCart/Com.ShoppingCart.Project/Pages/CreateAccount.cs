@@ -1,28 +1,20 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Firefox;
-using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 
-namespace Com.ShoppingCart.Project
+namespace Com.ShoppingCart.Project.Pages
 {
-    [TestClass]
     public class CreateAccount
     {
-        private IWebDriver _driver;
+        private readonly IWebDriver _driver;
 
-        [TestInitialize]
-        public void SetUpTest()
+        //create a constructor of IWebDriver       
+        public CreateAccount(IWebDriver driver)
         {
-            _driver = new ChromeDriver();
-            _driver.Manage().Window.Maximize();
-            _driver.Navigate().GoToUrl("http://demo.nopcommerce.com/");
+            _driver = driver;
         }
 
-        [TestMethod, TestCategory("Smoke")]
         public void RegisterAccount()
         {
             //click on register button
@@ -89,12 +81,6 @@ namespace Com.ShoppingCart.Project
             var createAccountButton = _driver.FindElement(By.Id("register-button"));
             createAccountButton.Click();
             Thread.Sleep(3000);
-        }
-
-        [TestCleanup]
-        public void TearDownTest()
-        {
-            _driver.Quit();
         }
     }
 }
