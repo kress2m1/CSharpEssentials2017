@@ -98,6 +98,10 @@ namespace KayBabs_Codes
                 
             }
             Console.ReadKey();
+            foreach (var VARIABLE in COLLECTION)
+            {
+                
+            }
         }
     }
 }
