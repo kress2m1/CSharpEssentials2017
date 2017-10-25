@@ -1,29 +1,26 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Firefox;
-using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 
-namespace Com.ShoppingCart.Project
+namespace Com.ShoppingCart.Project.Pages
 {
-    [TestClass]
-    public class PageTest
+    public class CreateAccount
     {
-        private IWebDriver _driver;
+        private readonly IWebDriver _driver;
 
+<<<<<<< HEAD:ShoppingCart/Com.ShoppingCart.Project/PageTest.cs
 
         [TestInitialize]
         public void SetUpTest()
+=======
+        //create a constructor of IWebDriver       
+        public CreateAccount(IWebDriver driver)
+>>>>>>> a4cb1d696ee2a49f7b59e7becfd5151cadfdf16e:ShoppingCart/Com.ShoppingCart.Project/Pages/CreateAccount.cs
         {
-            _driver = new ChromeDriver();
-            _driver.Manage().Window.Maximize();
-            _driver.Navigate().GoToUrl("http://demo.nopcommerce.com/");
+            _driver = driver;
         }
 
-        [TestMethod, TestCategory("Smoke")]
         public void RegisterAccount()
         {
             //click on register button
@@ -89,20 +86,7 @@ namespace Com.ShoppingCart.Project
             //click register button
             var createAccountButton = _driver.FindElement(By.Id("register-button"));
             createAccountButton.Click();
-        }
-
-        [TestMethod, TestCategory("UAT")]
-        public void ConfirmUserOnHomePage()
-        {
-            Console.WriteLine("sample test to be created here");
-        }
-
-        [TestCleanup]
-        public void TearDownTest()
-        {
-            Thread.Sleep(10000);
-            _driver.Quit();
-            //_driver.Close();
+            Thread.Sleep(3000);
         }
     }
 }
