@@ -41,7 +41,7 @@ namespace Com.ShoppingCartTask
             //enter email
             var loginEmail = _driver.FindElement(By.Id("Email"));
          //   loginEmail.SendKeys("kala@yahoo.com"); // after the datasheet is atatched we do not need this any more
-         loginEmail.SendKeys(username);
+            loginEmail.SendKeys(username);
             //enter password
             var loginPassword = _driver.FindElement(By.Id("Password"));
             //  loginPassword.SendKeys("welcome123"); // after the datasheet is atatched we do not need this any more
