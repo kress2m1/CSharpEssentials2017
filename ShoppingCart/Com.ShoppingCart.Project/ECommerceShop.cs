@@ -23,25 +23,19 @@ namespace Com.ShoppingCart.Project
             _driver = _browser.LaunchBrowser();
         }
 
-        [TestMethod, TestCategory("SIT")]
-        public void CreateANewAccount()
-        {
-            var createAccount = new CreateAccount(_driver);
-            createAccount.RegisterAccount();
-        }
-
         [TestMethod]
         [TestCategory("Smoke")]
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
             @"C:\Users\Andre\Desktop\userLoginDetails.csv",
             "userLoginDetails.csv",
             DataAccessMethod.Sequential)]
-        public void LogUserIn()
+        public void  ValidLogUserIn()
         {
             var username = TestContext.DataRow["username"] as string;
             var password = TestContext.DataRow["password"] as string;
 
-            var loginPage = new LoginPage(_driver);
+            var createAccount = new CreateAccount(_driver);
+            var loginPage = createAccount.RegisterAccount();
             loginPage.LoginAsValidUser(username, password);
 
             var logoutButton = _driver.FindElement(By.ClassName("ico-logout"));

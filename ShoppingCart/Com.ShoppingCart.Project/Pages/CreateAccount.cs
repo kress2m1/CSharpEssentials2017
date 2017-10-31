@@ -5,59 +5,55 @@ using OpenQA.Selenium.Support.UI;
 
 namespace Com.ShoppingCart.Project.Pages
 {
-    public class CreateAccount
+    public class CreateAccount : BasePage
     {
-        private readonly IWebDriver _driver;
-
-        //create a constructor of IWebDriver       
-        public CreateAccount(IWebDriver driver)
+        public CreateAccount(IWebDriver driver) : base(driver)
         {
-            _driver = driver;
         }
 
-        public void RegisterAccount()
+        public LoginPage RegisterAccount()
         {
             //click on register button
-            var registerButton = _driver.FindElement(By.ClassName("ico-register"));
+            var registerButton = Driver.FindElement(By.ClassName("ico-register"));
             registerButton.Click();
 
             //Assert register page is displayed
-            var registerPage = _driver.Title;
+            var registerPage = Driver.Title;
             Assert.AreEqual(registerPage, "nopCommerce demo store. Register");
 
             //click Gender
-            var maleGender = _driver.FindElement(By.Id("gender-male"));
+            var maleGender = Driver.FindElement(By.Id("gender-male"));
             maleGender.Click();
 
             //enter firstname
-            var firstName = _driver.FindElement(By.Id("FirstName"));
+            var firstName = Driver.FindElement(By.Id("FirstName"));
             firstName.SendKeys("Andre");
 
             //enter lastname
-            var lastName = _driver.FindElement(By.Id("LastName"));
+            var lastName = Driver.FindElement(By.Id("LastName"));
             lastName.SendKeys("Dada");
 
             //select Day of birth
-            var dayOfBirth = _driver.FindElement(By.Name("DateOfBirthDay"));
+            var dayOfBirth = Driver.FindElement(By.Name("DateOfBirthDay"));
             var selectDayOfBirth = new SelectElement(dayOfBirth);
             selectDayOfBirth.SelectByIndex(5);
 
             //select Month of birth
-            var monthOfBirth = _driver.FindElement(By.Name("DateOfBirthMonth"));
+            var monthOfBirth = Driver.FindElement(By.Name("DateOfBirthMonth"));
             var selectMonthOfBirth = new SelectElement(monthOfBirth);
             selectMonthOfBirth.SelectByValue("6");
 
             //select Year of birth
-            var yearOfBirth = _driver.FindElement(By.Name("DateOfBirthYear"));
+            var yearOfBirth = Driver.FindElement(By.Name("DateOfBirthYear"));
             var selectYearOfBirth = new SelectElement(yearOfBirth);
             selectYearOfBirth.SelectByText("1980");
 
             //enter email
-            var email = _driver.FindElement(By.Id("Email"));
+            var email = Driver.FindElement(By.Id("Email"));
             email.SendKeys("wale@hotmail.com");
 
             //tick newsletter checkbox
-            var newsletterBox = _driver.FindElement(By.Id("Newsletter"));
+            var newsletterBox = Driver.FindElement(By.Id("Newsletter"));
             /**
              * This code below would be standard if the checbox 
              * for newsletter was never ticked by default
@@ -70,17 +66,19 @@ namespace Com.ShoppingCart.Project.Pages
             }
 
             //enter password
-            var password = _driver.FindElement(By.Id("Password"));
+            var password = Driver.FindElement(By.Id("Password"));
             password.SendKeys("welcome123");
 
             //confirm password
-            var passwordConfirm = _driver.FindElement(By.Id("ConfirmPassword"));
+            var passwordConfirm = Driver.FindElement(By.Id("ConfirmPassword"));
             passwordConfirm.SendKeys("welcome123");
 
             //click register button
-            var createAccountButton = _driver.FindElement(By.Id("register-button"));
+            var createAccountButton = Driver.FindElement(By.Id("register-button"));
             createAccountButton.Click();
             Thread.Sleep(3000);
+
+            return new LoginPage(Driver);
         }
     }
 }
