@@ -4,9 +4,8 @@ using Com.ShoppingCart.Project.Pages;
 using Com.ShoppingCart.Project.Utilities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 
-namespace Com.ShoppingCart.Project
+namespace Com.ShoppingCart.Project.Tests
 {
     [TestClass]
     public class ECommerceShop
@@ -34,12 +33,12 @@ namespace Com.ShoppingCart.Project
             var username = TestContext.DataRow["username"] as string;
             var password = TestContext.DataRow["password"] as string;
 
-            var createAccount = new CreateAccount(_driver);
-            var loginPage = createAccount.RegisterAccount();
-            loginPage.LoginAsValidUser(username, password);
-
-            var logoutButton = _driver.FindElement(By.ClassName("ico-logout"));
-            Assert.IsTrue(logoutButton.Displayed);
+            var createAccount1 = new CreateAccount(_driver);
+            createAccount1
+                .RegisterAccount()
+                .LoginAsValidUser(username, password)
+                .SearchForPc()
+                .LogUserOut();
         }
 
         [TestMethod]

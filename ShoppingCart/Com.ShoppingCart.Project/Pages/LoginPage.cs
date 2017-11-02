@@ -11,18 +11,12 @@ namespace Com.ShoppingCart.Project.Pages
 {
     public class LoginPage : BasePage
     {
-        //private IWebDriver _driver;
-
-        //public LoginPage(IWebDriver driver)
-        //{
-        //    _driver = driver;
-        //}
-
+     
         public LoginPage(IWebDriver driver) : base(driver)
         {
         }
 
-        public void LoginAsValidUser(string username, string password)
+        public ComputerPage LoginAsValidUser(string username, string password)
         {
             //select login tab from the landing page
             var loginTab = Driver.FindElement(By.ClassName("ico-login"));
@@ -42,6 +36,10 @@ namespace Com.ShoppingCart.Project.Pages
             var loginButton = Driver.FindElement(By.ClassName("login-button"));
             loginButton.Click();
             Thread.Sleep(4000);
+            //return new LogOutPage(Driver); 
+            //return new ComputerPage(Driver);
+            return new ComputerPage(Driver);
+
         }  
     }
 }
