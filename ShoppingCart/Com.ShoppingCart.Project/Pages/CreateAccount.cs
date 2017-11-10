@@ -7,6 +7,7 @@ namespace Com.ShoppingCart.Project.Pages
 {
     public class CreateAccount : BasePage
     {
+
         public CreateAccount(IWebDriver driver) : base(driver)
         {
         }
@@ -35,6 +36,7 @@ namespace Com.ShoppingCart.Project.Pages
 
             //select Day of birth
             var dayOfBirth = Driver.FindElement(By.Name("DateOfBirthDay"));
+            //var selectDayOfBirth = new SelectElement(dayOfBirth);
             var selectDayOfBirth = new SelectElement(dayOfBirth);
             selectDayOfBirth.SelectByIndex(5);
 

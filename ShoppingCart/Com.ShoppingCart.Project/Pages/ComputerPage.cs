@@ -17,17 +17,41 @@ namespace Com.ShoppingCart.Project.Pages
         {
         }
 
-        private string CPU;
+        private string _cPUType = "Intel Core i5";
+        private string _memory = "8 GB";
 
         public LogOutPage SearchForPc()
         {
-            //this code explains the mouseover action and how to select an element from the sub-menu
+           //
             var computerMenu = Driver.FindElement(By.LinkText("Computers"));
 
+            //this code explains the mouseover action and how to select an element from the sub-menu
             var action = new Actions(Driver);
             action.MoveToElement(computerMenu).Build().Perform();
             Driver.FindElement(By.LinkText("Notebooks")).Click();
             return new LogOutPage(Driver);
+        }
+
+        public void SearchForPcAndAssert()
+        {
+            //
+            var computerMenu = Driver.FindElement(By.LinkText("Computers"));
+
+            //this code explains the mouseover action and how to select an element from the sub-menu
+            var action = new Actions(Driver);
+            action.MoveToElement(computerMenu).Build().Perform();
+            Driver.FindElement(By.LinkText("Notebooks")).Click();
+
+            //Select Notebook by CPU type
+            Driver.FindElement(By.LinkText(_cPUType)).Click();
+
+            //Select Notebook by Memory size
+            Driver.FindElement(By.LinkText(_memory)).Click();
+        }
+
+        public bool ValidateResult(string item)
+        {
+            return Driver.PageSource.Contains(item);
         }
     }
 }

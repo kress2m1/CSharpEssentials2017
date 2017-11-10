@@ -69,12 +69,16 @@
     <Compile Include="Pages\CreateAccount.cs" />
     <Compile Include="Pages\LoginPage.cs" />
     <Compile Include="Pages\LogOutPage.cs" />
+    <Compile Include="Pages\PFModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\ECommerceShop.cs" />
     <Compile Include="Tests\ECommerceShopSearch.cs" />
+    <Compile Include="Tests\Navigations.cs" />
+    <Compile Include="Tests\PageFactoryIntro.cs" />
     <Compile Include="Utilities\BrowserHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="DataFiles\AvailableNotebooks.xlsx" />
     <None Include="DataFiles\invalidUserLoginDetails.csv" />
     <None Include="DataFiles\newInvalidUserLoginDetails.csv" />
     <None Include="DataFiles\userLoginDetails.csv" />

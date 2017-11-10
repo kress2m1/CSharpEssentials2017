@@ -1,9 +1,12 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.Threading;
 using Com.ShoppingCart.Project.Pages;
 using Com.ShoppingCart.Project.Utilities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.PageObjects;
+using OpenQA.Selenium.Support.UI;
 
 namespace Com.ShoppingCart.Project.Tests
 {
@@ -12,6 +15,9 @@ namespace Com.ShoppingCart.Project.Tests
     {
         private IWebDriver _driver;
         private BrowserHelper _browser;
+
+        //[FindsBy(How = How.ClassName, Using = "login")]
+        //public IWebElement Login { get; set; }
 
         public TestContext TestContext { get; set; }
 
@@ -119,6 +125,28 @@ namespace Com.ShoppingCart.Project.Tests
             loginButton.Click();
 
             Thread.Sleep(4000);
+        }
+
+        [TestMethod]
+        [DataSource("System.Data.OleDB",
+            @"Provider=Microsoft.ACE.OLEDB.12.0;
+            Data Source=F:\cSharp2017\CSharpEssentials2017\ShoppingCart\Com.ShoppingCart.Project\DataFiles\AvailableNotebooks.xlsx;
+            Extended Properties='Excel 12.0;HDR=yes';",
+            "Sheet1$", DataAccessMethod.Sequential)]
+        public void NarrowSearchForNotebook()
+        {
+            var CPUType = (string) TestContext.DataRow["CPUType"];
+            var Memory = (string) TestContext.DataRow["Memory"];
+            var Notebook = (string) TestContext.DataRow["MachineName"];
+            var Price = (string) TestContext.DataRow["ItemAmount"];
+
+            var computerPage = new ComputerPage(_driver);
+            computerPage.SearchForPcAndAssert();
+
+            Assert.IsTrue(computerPage.ValidateResult(CPUType));
+            Assert.IsTrue(computerPage.ValidateResult(Memory));
+            Assert.IsTrue(computerPage.ValidateResult(Notebook));
+            Assert.IsTrue(computerPage.ValidateResult(Price));
         }
 
         [TestCleanup]
