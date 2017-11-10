@@ -72,7 +72,8 @@
     <Compile Include="LoginUser.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Files\userLoginDetailsPresideji.csv" />
+    <None Include="DataFiles\invalidUserLoginDetailsPresideji.csv" />
+    <None Include="DataFiles\userLoginDetailsPresideji.csv" />
     <None Include="packages.config" />
   </ItemGroup>
   <Choose>
