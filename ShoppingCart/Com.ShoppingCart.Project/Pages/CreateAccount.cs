@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
@@ -19,7 +20,11 @@ namespace Com.ShoppingCart.Project.Pages
 >>>>>>> a4cb1d696ee2a49f7b59e7becfd5151cadfdf16e:ShoppingCart/Com.ShoppingCart.Project/Pages/CreateAccount.cs
         {
             _driver = driver;
+internal void RegisterAccount()
+        {
+            throw new NotImplementedException();
         }
+    }
 
         public void RegisterAccount()
         {
