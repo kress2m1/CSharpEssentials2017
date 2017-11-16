@@ -5,7 +5,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 
-namespace Com._1stSeleniumTrial
+namespace Com._1stSeleniumTrial.Files
 {
     [TestClass]
     public class UnitTest1
@@ -30,6 +30,8 @@ namespace Com._1stSeleniumTrial
 
             var email = _driver.FindElement(By.Id("email_create"));
             email.SendKeys("anitaudokang@gmail.com");
+            var password = _driver.FindElement(By.Id("passwd"));
+           password.SendKeys("Abc1234");
 
             var submitButton = _driver.FindElement(By.Id("SubmitCreate"));
             submitButton.Click();
@@ -93,7 +95,7 @@ namespace Com._1stSeleniumTrial
         [TestCleanup]
         public void TearDownTest()
         {
-            Thread.Sleep(3000);
+            Thread.Sleep(4000);
             _driver.Quit();
         }
     }
