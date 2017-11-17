@@ -13,6 +13,14 @@ namespace ShoppingCartTaskProject.Tests
 
         public TestContext TestContext { get; set; }
 
+        //[TestInitialize]
+        
+        //{
+        //    _browser = new BrowserHelper();
+        //    _driver = _browser.LaunchBrowser();
+
+        //}
+
         [TestMethod]
         [TestCategory("Smoke")]
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",

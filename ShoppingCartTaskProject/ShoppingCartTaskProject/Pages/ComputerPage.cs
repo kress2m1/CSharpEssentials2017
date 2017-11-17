@@ -14,6 +14,8 @@ namespace ShoppingCartTaskProject.Pages
         }
         private string _cPUType = "Intel Core i5";
         private string _memory = "8 GB";
+        private By CPUNew = By.Id("Intel Core i5");
+
 
         public LogOutPage SearchForPc()
         {
@@ -40,7 +42,8 @@ namespace ShoppingCartTaskProject.Pages
             Driver.FindElement(By.LinkText("Notebooks")).Click();
 
             //Select Notebook by CPU type
-            Driver.FindElement(By.LinkText(_cPUType)).Click();
+            //Driver.FindElement(By.LinkText(_cPUType)).Click();
+            Driver.FindElement(By.LinkText(CPUNew.ToString())).Click();
 
             //Select Notebook by Memory size
             Driver.FindElement(By.LinkText(_memory)).Click();

@@ -5,12 +5,17 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using ShoppingCartTaskProject.Pages;
+using ShoppingCartTaskProject.Utilities;
 
 namespace ShoppingCartTaskProject
 {
    //- [TestClass]
-    public class CreateAccount : BasePage
+   public class CreateAccount : BasePage
+
     {
+       
+
+
         //we will comment some of the codes below 
         //out and call it from the base page
 
