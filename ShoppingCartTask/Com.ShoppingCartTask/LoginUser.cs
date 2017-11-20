@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using Com.ShoppingCartTask.Pages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -20,6 +21,15 @@ namespace Com.ShoppingCartTask
             _driver.Manage().Window.Maximize();
             _driver.Navigate().GoToUrl("http://demo.nopcommerce.com/");
         }
+  //---------------------------Called From "Register Account" in "PageTestTask.cs"-------
+        //[TestMethod, TestCategory("SIT")]
+        //public void CreateANewAccount()
+        //{
+        //    var pageTestTask = new PageTestTask(_driver);
+        //   pageTestTask.RegisterAccount();
+
+        //}
+
 
         [TestMethod, TestCategory("Smoke")]
         // public void GetPageTitle()
@@ -31,29 +41,19 @@ namespace Com.ShoppingCartTask
         {
             var username = TestContext.DataRow["username"] as string;
             var password = TestContext.DataRow["password"] as string;
-            //selectlogin tab from the landing page
-            var loginTab = _driver.FindElement(By.ClassName("ico-login"));
-            loginTab.Click();
+            
+  //-------let us now call"LoginPage" from "LoginPage.cs" -------------------------//
 
-            //enter email
-            var loginEmail = _driver.FindElement(By.Id("Email"));
-            //   loginEmail.SendKeys("kala@yahoo.com"); // after the datasheet is atatched we do not need this any more
-            loginEmail.SendKeys(username);
-            //enter password
-            var loginPassword = _driver.FindElement(By.Id("Password"));
-            //  loginPassword.SendKeys("welcome123"); // after the datasheet is atatched we do not need this any more
-            loginPassword.SendKeys(password);
+            var loginPage = new LoginPage(_driver);
+            loginPage.LoginAsValidUser(username, password);
 
-            //click login button
-            var loginButton = _driver.FindElement(By.ClassName("login-button"));
-            loginButton.Click();
 
             //logout button
             var logoutButton = _driver.FindElement(By.ClassName("ico-logout"));
             Assert.IsTrue(logoutButton.Displayed); // check logout button is display
         }
 
-        //------------------------------------------------------------------------
+//--------------------------------------------------------------------------------//
         [TestMethod, TestCategory("Smoke")]
         // public void GetPageTitle()
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
