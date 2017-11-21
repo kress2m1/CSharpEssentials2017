@@ -41,6 +41,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="WebDriver, Version=3.6.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Selenium.WebDriver.3.6.0\lib\net45\WebDriver.dll</HintPath>
@@ -68,8 +69,11 @@
   <ItemGroup>
     <Compile Include="PageTestTask.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LoginUser.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="DataFiles\invalidUserLoginDetailsPresideji.csv" />
+    <None Include="DataFiles\userLoginDetailsPresideji.csv" />
     <None Include="packages.config" />
   </ItemGroup>
   <Choose>
