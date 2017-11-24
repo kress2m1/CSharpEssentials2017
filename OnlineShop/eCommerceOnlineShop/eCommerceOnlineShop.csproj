@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AC97C195-5D8E-4591-945B-501042B14063}</ProjectGuid>
+    <ProjectGuid>{F54CF170-90B3-4F1B-A2A7-67239C76AF60}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>eCommerce</RootNamespace>
-    <AssemblyName>eCommerce</AssemblyName>
+    <RootNamespace>eCommerceOnlineShop</RootNamespace>
+    <AssemblyName>eCommerceOnlineShop</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -66,18 +66,19 @@
   </Choose>
   <ItemGroup>
     <Compile Include="BrowserFactory\BrowserRepo.cs" />
-    <Compile Include="Configuration\OpenCartFramework.Designer.cs">
-      <DependentUpon>OpenCartFramework.settings</DependentUpon>
+    <Compile Include="Configuration\eCommerceConfig.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>eCommerceConfig.settings</DependentUpon>
     </Compile>
+    <Compile Include="Hooks\CartHooks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Configuration\OpenCartFramework.settings">
+    <None Include="Configuration\eCommerceConfig.settings">
       <Generator>PublicSettingsSingleFileGenerator</Generator>
-      <LastGenOutput>OpenCartFramework.Designer.cs</LastGenOutput>
+      <LastGenOutput>eCommerceConfig.Designer.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
