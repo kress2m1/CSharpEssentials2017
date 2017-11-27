@@ -8,16 +8,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace eCommerce.Configuration {
+namespace eCommerceOnlineShop.Configuration {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
-    public sealed partial class OpenCartFramework : global::System.Configuration.ApplicationSettingsBase {
+    public sealed partial class eCommerceConfig : global::System.Configuration.ApplicationSettingsBase {
         
-        private static OpenCartFramework defaultInstance = ((OpenCartFramework)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new OpenCartFramework())));
+        private static eCommerceConfig defaultInstance = ((eCommerceConfig)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new eCommerceConfig())));
         
-        public static OpenCartFramework Default {
+        public static eCommerceConfig Default {
             get {
                 return defaultInstance;
             }
@@ -32,12 +32,15 @@ namespace eCommerce.Configuration {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://www.opencart.com/")]
-        public string BaseURL {
+        [global::System.Configuration.DefaultSettingValueAttribute("https://www.opencart.com")]
+        public string baseURL {
             get {
-                return ((string)(this["BaseURL"]));
+                return ((string)(this["baseURL"]));
+            }
+            set {
+                this["baseURL"] = value;
             }
         }
     }
