@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F54CF170-90B3-4F1B-A2A7-67239C76AF60}</ProjectGuid>
+    <ProjectGuid>{69C4DE8D-325A-432A-BA66-4B5CC9950CC0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>eCommerceOnlineShop</RootNamespace>
-    <AssemblyName>eCommerceOnlineShop</AssemblyName>
+    <RootNamespace>RetconShoppingProject</RootNamespace>
+    <AssemblyName>RetconShoppingProject</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -65,25 +65,27 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="BrowserFactory\BrowserRepo.cs" />
-    <Compile Include="Configuration\eCommerceConfig.Designer.cs">
+    <Compile Include="BrowserFactory\Browser.cs" />
+    <Compile Include="Configuration\RetconShoppingConfig.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>eCommerceConfig.settings</DependentUpon>
+      <DependentUpon>RetconShoppingConfig.settings</DependentUpon>
     </Compile>
-    <Compile Include="DatabaseConnection\Hooks\CartHooks.cs" />
+    <Compile Include="Hookes\CartHookes.cs" />
+    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Configuration\eCommerceConfig.settings">
+    <None Include="Configuration\RetconShoppingConfig.settings">
       <Generator>PublicSettingsSingleFileGenerator</Generator>
-      <LastGenOutput>eCommerceConfig.Designer.cs</LastGenOutput>
+      <LastGenOutput>RetconShoppingConfig.Designer.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Utilities\" />
+    <Folder Include="DatabaseConnection\" />
+    <Folder Include="Utillties\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
