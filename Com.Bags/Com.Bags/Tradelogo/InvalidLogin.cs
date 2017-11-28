@@ -17,21 +17,23 @@ namespace Com.Bags
 
     
         
-        [TestMethod, ("UAT")]
+        [TestMethod,TestCategory("UAT")]
         //[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory |\\data.csv", "data#csv",
         //  @"C:\Users\Rachel\Documents\CsharpRepo\CSharpEssentials2017\Com.Bags\Com.Bags\Tradelogo\InvalidLogin.csv,
         //    "InvalidLogin.csv", DataAccessMethod.Sequential)]
         public void InvalidUserLogin()
         {
+       
             var username = TestContext.DataRow["username"] as string;
             var password = TestContext.DataRow["password"] as string;
+
 
             Debug.Assert(usernameOrig != null, "usernameOrig ! = null");
             var splitUserName = usernameOrig.Split("-");
             Debug.Assert(passwordOrig ! = null, "passwordOrig ! = null");
             var splitPassword = passwordOrig.Split("-");
 
-           username = splitUserName[1];
+            username = splitUserName[1];
             password = splitPassword[1];
             //select login tab from the landing page
             var loginTab = _driver.FindElement(By.ClassName("ico-login"));
@@ -57,15 +59,19 @@ namespace Com.Bags
         }
 
         [TestCleanup]
-        public void ValidLogin()
-
+        public void tearDownLoginPage()
+        {
+            //_driver.Close();
+            _driver.Quit();
         }
+
+        
 
         private void DataSource(string microsoftVisualstudioTesttoolsDatasourceCsv, string datadirectoryDataCsv, string dataCsv, object C)
         {
             throw new NotImplementedException();
         }
 
-        public object TestCleanup { get; set; }
+        
     }
 }
