@@ -33,7 +33,7 @@ namespace Com.ShoppingCart.Project.Tests
             var username = TestContext.DataRow["username"] as string;
             var password = TestContext.DataRow["password"] as string;
 
-            var createAccount1 = new CreateAccount(_driver);
+            var createAccount1 = new CreateAccount();
             createAccount1
                 .RegisterAccount()
                 .LoginAsValidUser(username, password)

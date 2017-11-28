@@ -12,6 +12,10 @@ namespace Com.ShoppingCart.Project.Pages
     {
         protected IWebDriver Driver;
 
+        public BasePage()
+        {
+        }
+
         public BasePage(IWebDriver driver)
         {
             Driver = driver;

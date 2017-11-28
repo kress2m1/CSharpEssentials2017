@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
@@ -8,9 +9,27 @@ namespace Com.ShoppingCart.Project.Pages
     public class CreateAccount : BasePage
     {
 
+
+        [TestInitialize]
+        public void SetUpTest()
+        {
+            throw new NotImplementedException();
+        }
+
+        //create a constructor of IWebDriver       
+        public CreateAccount() : base()
+        {
+            throw new NotImplementedException();
+        }
+
+        
+        
+
         public CreateAccount(IWebDriver driver) : base(driver)
         {
+
         }
+    
 
         public LoginPage RegisterAccount()
         {
