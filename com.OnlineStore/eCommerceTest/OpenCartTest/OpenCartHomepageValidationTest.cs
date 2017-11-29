@@ -9,12 +9,19 @@ namespace eCommerceTest.OpenCartTest
     [TestClass]
     public class OpenCartHomepageValidationTest : CartHooks
     {
+        public TestContext TestContext { get; set; }
 
-        [TestMethod]
+        [TestMethod, TestCategory("SMOKE")]
+        [DataSource("System.Data.OleDB",
+            @"Provider=Microsoft.ACE.OLEDB.12.0;
+            Data Source=F:\cSharp2017\CSharpEssentials2017\com.OnlineStore\eCommerceTest\DataFiles\OpenCartDataSource.xlsx;
+            Extended Properties='Excel 12.0;HDR=yes';",
+            "titleCheck$", DataAccessMethod.Sequential)]
         public void CheckHomePageTitle()
         {
-            Console.WriteLine(OpenCartFramework.Default.Browser);
-            Console.WriteLine("This is MSTest");
+            var pagetitle = TestContext.DataRow["OpenCartPageTitle"];
+            var titlePage = _driver.Title;
+            Assert.AreEqual(pagetitle, titlePage, "The page title does not match title");
             Thread.Sleep(3000);
         }
     }
