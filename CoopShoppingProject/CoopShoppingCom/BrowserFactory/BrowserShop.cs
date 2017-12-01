@@ -17,39 +17,32 @@ namespace CoopShoppingCom.BrowserFactory
 
         public BrowserShop InitializeBrowser()
         {
-
-
-            var browser = CoopShoppingConfig.Default.Browser;
+           var browser = CoopShoppingConfig.Default.Browser;
 
             if (browser.ToLower().StartsWith("chro") ||
                 browser.ToLower().EndsWith("ome") ||
                 browser.ToLower().Equals("Chrome"))
             {
                 _driver = new ChromeDriver();
-
-            }
+               }
             else if (browser.ToLower().StartsWith("Fire") ||
                      browser.ToLower().EndsWith("Fox") ||
                      browser.ToLower().Equals("FireFox"))
             {
                 _driver = new FirefoxDriver();
-
             }
-
-            return new BrowserShop();
-        }
-
-        public void SetUpBrowser()
-        {
+              return new BrowserShop();
+           }
+            public void SetUpBrowser()
+           {
             _driver.Manage().Window.Maximize();
 
            //driver.Navigate().GoToUrl("http://www.co-operativebank.co.uk/");
-
-        }
+           }
         public void CloseBrowser()
          {
                 _driver?.Quit();
-          }
+         }
            
         }
 

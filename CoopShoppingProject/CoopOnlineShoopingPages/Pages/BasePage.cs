@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CoopShoppingCom.Configuration;
 using OpenQA.Selenium;
 
 namespace CoopOnlineShoopingPages.Pages
@@ -17,6 +18,11 @@ namespace CoopOnlineShoopingPages.Pages
           Driver = driver;
        }
 
+       public HomePage GoToHomePage()
+       {
+         Driver.Navigate().GoToUrl(CoopShoppingConfig.Default.BaseURL);
+         return new HomePage(Driver);
+        }
 
 
    }

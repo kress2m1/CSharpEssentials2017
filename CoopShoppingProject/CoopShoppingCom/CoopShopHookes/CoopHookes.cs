@@ -11,22 +11,20 @@ namespace CoopShoppingCom.CoopShopHookes
     [TestClass]
    public class CoopHookes
     {
-        private BrowserShop _browserShop;
-         
+        private BrowserShop _browsershop ;
+
         [TestInitialize]
         public void StartUpBrowser()
-{
-        _browserShop = new BrowserShop();
-        _browserShop.InitializeBrowser().SetUpBrowser();
+        {
+             _browsershop = new BrowserShop();
+             _browsershop.InitializeBrowser().SetUpBrowser();
 
+        }
 
-}
-    [TestCleanup]
-    public void CloseDownBrowser()
-    {
-        _browserShop.CloseBrowser();
-    }
-
-    
+        [TestCleanup]
+        public void CloseDownBrowser()
+        {
+            _browsershop.CloseBrowser();
+        }
     }
 }

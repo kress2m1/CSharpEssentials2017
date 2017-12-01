@@ -14,13 +14,11 @@ namespace CoopShoppingCom.BrowserFactory
 {
     [TestClass]
     public class BrowserTest
-
-    {
+ {
         private IWebDriver _driver;
-
-        [TestInitialize]
+       [TestInitialize]
         public BrowserTest InitializeBrowser()
-        {
+          {
             var browser = CoopShoppingConfig.Default.Browser;
 
             if (browser.ToLower().StartsWith("chro") ||

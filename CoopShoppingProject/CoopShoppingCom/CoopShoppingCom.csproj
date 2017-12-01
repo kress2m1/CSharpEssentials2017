@@ -73,7 +73,6 @@
       <DependentUpon>CoopShoppingConfig.settings</DependentUpon>
     </Compile>
     <Compile Include="CoopShopHookes\CoopHookes.cs" />
-    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
