@@ -8,16 +8,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RetconShoppingProject.Configuration {
+namespace eTrading.Configuration {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
-    public sealed partial class RetconShoppingConfig : global::System.Configuration.ApplicationSettingsBase {
+    public sealed partial class eTradingConfig : global::System.Configuration.ApplicationSettingsBase {
         
-        private static RetconShoppingConfig defaultInstance = ((RetconShoppingConfig)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new RetconShoppingConfig())));
+        private static eTradingConfig defaultInstance = ((eTradingConfig)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new eTradingConfig())));
         
-        public static RetconShoppingConfig Default {
+        public static eTradingConfig Default {
             get {
                 return defaultInstance;
             }
@@ -25,22 +25,10 @@ namespace RetconShoppingProject.Configuration {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Chrome")]
+        [global::System.Configuration.DefaultSettingValueAttribute("chrome")]
         public string Browser {
             get {
                 return ((string)(this["Browser"]));
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://www.opencart.com")]
-        public string BaseURL {
-            get {
-                return ((string)(this["BaseURL"]));
-            }
-            set {
-                this["BaseURL"] = value;
             }
         }
     }

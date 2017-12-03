@@ -38,7 +38,7 @@ namespace RetconShoppingProject.BrowserFactory
         public IWebDriver SetupBrowser()
         {
             _driver.Manage().Window.Maximize();
-            //_driver.Navigate().GoToUrl("http://www.opencart.com");
+            _driver.Navigate().GoToUrl("http://www.opencart.com");
             return _driver;
         }
 

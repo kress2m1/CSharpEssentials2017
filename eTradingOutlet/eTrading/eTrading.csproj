@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{69C4DE8D-325A-432A-BA66-4B5CC9950CC0}</ProjectGuid>
+    <ProjectGuid>{ADF70F0B-FE08-4DE8-9A00-9DABFC204036}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RetconShoppingProject</RootNamespace>
-    <AssemblyName>RetconShoppingProject</AssemblyName>
+    <RootNamespace>eTrading</RootNamespace>
+    <AssemblyName>eTrading</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -43,12 +43,12 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
-    <Reference Include="WebDriver, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Selenium.WebDriver.3.7.0\lib\net45\WebDriver.dll</HintPath>
+    <Reference Include="WebDriver, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.8.0\lib\net45\WebDriver.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WebDriver.Support, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Selenium.Support.3.7.0\lib\net45\WebDriver.Support.dll</HintPath>
+    <Reference Include="WebDriver.Support, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.8.0\lib\net45\WebDriver.Support.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -65,26 +65,26 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="BrowserFactory\Browser.cs" />
-    <Compile Include="Configuration\RetconShoppingConfig.Designer.cs">
+    <Compile Include="BrowserFactory\BrowserRepo.cs" />
+    <Compile Include="Configuration\eTradingConfig.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>RetconShoppingConfig.settings</DependentUpon>
+      <DependentUpon>eTradingConfig.settings</DependentUpon>
     </Compile>
-    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Configuration\RetconShoppingConfig.settings">
+    <None Include="Configuration\eTradingConfig.settings">
       <Generator>PublicSettingsSingleFileGenerator</Generator>
-      <LastGenOutput>RetconShoppingConfig.Designer.cs</LastGenOutput>
+      <LastGenOutput>eTradingConfig.Designer.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DatabaseConnection\" />
-    <Folder Include="Utillties\" />
+    <Folder Include="Hooks\" />
+    <Folder Include="Utilities\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
