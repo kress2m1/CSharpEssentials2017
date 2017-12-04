@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTrading", "eTrading\eTrading.csproj", "{ADF70F0B-FE08-4DE8-9A00-9DABFC204036}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTradingShoppingPages", "eTradingShoppingPages\eTradingShoppingPages.csproj", "{D4622CF5-7B4A-4965-A28C-39AAA1DFBDCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTradingShoppingTest", "eTradingShoppingTest\eTradingShoppingTest.csproj", "{99EFDCBD-AC5B-4EE7-8F75-57B820BDAB0E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADF70F0B-FE08-4DE8-9A00-9DABFC204036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADF70F0B-FE08-4DE8-9A00-9DABFC204036}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADF70F0B-FE08-4DE8-9A00-9DABFC204036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADF70F0B-FE08-4DE8-9A00-9DABFC204036}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4622CF5-7B4A-4965-A28C-39AAA1DFBDCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4622CF5-7B4A-4965-A28C-39AAA1DFBDCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4622CF5-7B4A-4965-A28C-39AAA1DFBDCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4622CF5-7B4A-4965-A28C-39AAA1DFBDCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99EFDCBD-AC5B-4EE7-8F75-57B820BDAB0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99EFDCBD-AC5B-4EE7-8F75-57B820BDAB0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99EFDCBD-AC5B-4EE7-8F75-57B820BDAB0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99EFDCBD-AC5B-4EE7-8F75-57B820BDAB0E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
