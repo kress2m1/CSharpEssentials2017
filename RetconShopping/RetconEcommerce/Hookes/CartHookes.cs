@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
+using RetconEcommerce.Pages;
 using RetconShoppingProject.BrowserFactory;
 
 namespace RetconShoppingProject.Hookes
@@ -23,6 +24,9 @@ namespace RetconShoppingProject.Hookes
             _driver = _browser
                 .InitializeBrowser()
                 .SetupBrowser();
+         //   var basepage = new BasePage(_driver);
+         BasePage basePage=new BasePage(_driver);
+            basePage.GoToHomePage();
         }
 
         [TestCleanup]
