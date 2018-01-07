@@ -15,7 +15,7 @@ namespace Com._1stSeleniumTrial
             {
                 _driver = new ChromeDriver();
                 _driver.Manage().Window.Maximize();
-                _driver.Navigate().GoToUrl("http://automationpractice.com/index.php");
+                _driver.Navigate().GoToUrl("https://www.clear.bank/");
 
             }
 
