@@ -18,7 +18,7 @@ namespace Com.ShoppingCart.Project.Tests
         public void StartUpBrowser()
         {
             _browser = new BrowserHelper();
-            _driver = _browser.LaunchBrowser();
+            _browser.LaunchBrowser();
         }
 
         [TestMethod]

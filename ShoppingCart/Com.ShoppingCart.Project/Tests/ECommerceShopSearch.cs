@@ -7,7 +7,7 @@ using OpenQA.Selenium;
 namespace Com.ShoppingCart.Project.Tests
 {
     [TestClass]
-    public class ECommerceShopSearch
+    public class ECommerceShopSearch : BasePage
     {
 
         private IWebDriver _driver;
@@ -47,5 +47,8 @@ namespace Com.ShoppingCart.Project.Tests
             _browser.CloseBrowser();
         }
 
+        public ECommerceShopSearch(IWebDriver driver) : base(driver)
+        {
+        }
     }
 }
