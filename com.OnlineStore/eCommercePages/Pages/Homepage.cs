@@ -12,5 +12,10 @@ namespace eCommercePages.Pages
         public Homepage(IWebDriver driver) : base(driver)
         {
         }
+
+        public bool ValidateHeaderTabs(string tabs)
+        {
+            return Driver.PageSource.Contains(tabs);
+        }
     }
 }

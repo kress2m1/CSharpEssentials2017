@@ -34,7 +34,7 @@ namespace eCommerce.Configuration {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://www.opencart.com/")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://demo.opencart.com/")]
         public string BaseURL {
             get {
                 return ((string)(this["BaseURL"]));

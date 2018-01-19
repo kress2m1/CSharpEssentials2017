@@ -18,11 +18,18 @@ namespace eCommercePages.Pages
             Driver = driver;
             PageFactory.InitElements(driver, this);
         }
+        
 
         public Homepage GoToHomePage()
         {
             Driver.Navigate().GoToUrl(OpenCartFramework.Default.BaseURL);   
             return new Homepage(Driver);
+        }
+
+        public void GoToCameraPage()
+        {
+            Driver.Navigate().GoToUrl(OpenCartFramework.Default.BaseURL);
+
         }
     }
 }
